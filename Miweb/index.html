@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link
+    rel="stylesheet"
+    href="./venobox/venobox.css"
+    type="text/css"
+    media="screen"
+  />
+
 </head>
 <body>
    <header>
@@ -25,7 +33,7 @@
     
         
         <li class="nav-item ">
-            <a href="/Miweb/trabajos.html">POSTPRODUCCIÓN</a>
+            <a href="/Miweb/pospo.html">POSTPRODUCCIÓN</a>
         </li>
 
         <li class="nav-item ">
@@ -40,7 +48,7 @@
             <a href="/Miweb/trabajos.html">ESCRITORA</a>
         </li>
         <li class="nav-item ">
-            <a href="/Miweb/trabajos.html">WEB</a>
+            <a href="/Miweb/trabajos.html">DISEÑO WEB</a>
         </li>
         <li class="nav-item ">
             <a href="/Miweb/Contacto.html">CONTACTO</a>
@@ -55,8 +63,8 @@
             <div class="site-content">
                 <div class="d-flex justify-content-center">
                     <div class="d-flex flex-column">
-                        <h1 class="site-title">Post Producción para tus proyectos</h1>
-                        <p class="site-desc">¿No tienes los medios?  Nosotros Le damos forma a tus películas.</p>
+                        <h1 class="site-title">Bienvenidos/as</h1>
+                        <p class="site-desc">¿No tienes los medios?  Me encargaré de darle forma a tus películas.</p>
                         
                         <div class="d-flex flex-row">
                            <a href="/Miweb/Contacto.html" target="_blank">  <input type="button" value="Contacta Ahora" class="btn site-btn2 px-4 py-3 mr-4 btn-light" id="boton"> </a>
@@ -68,13 +76,37 @@
         
         <div class="section-1">
             <div class="container text-center">
-                <h1 class="heading-1">Porqué tu obra necesita</h1>
-                <h1 class="heading-2">una Post Producción</h1>
-                <p class="para-1">Tienes una idea en la cabeza y no sabes como empezar.Los técnicos en Post Producción
-                    le darán ese toque profesional que necesitas. Editando,retocando imagen y creando un diseño
-                    sonoro perfecto. Te acompañaran en el proceso, verás y escucharás que la película
-                    que tenías en mente es una realidad.
+                <h1 class="heading-1">Por qué tu obra necesita una postproducción
+
+
+
+                </h1>
+                <p class="para-1">Los mejores momentos merecen ser recordados y conservados.
+                     Tu trabajo merece ser hecho realidad por un profesional responsable que lo
+                      trate con respeto, para obtener el mejor resultado. Yo me encargaré de hacerlo posible,
+                       con grabación, edición y el toque de color necesario. Contáctame y haremos tus sueños realidad.
                 </p>
+
+<!-- Video portofolio  -->
+
+<div
+class="video"
+style="background-image: url(/Miweb/MisImg/videoPortofolio.png)"
+>
+<a
+  class="venobox"
+  data-autoplay="true"
+  data-vbtype="video"
+  href="https://youtu.be/OCSpR2sNB8M"
+  data-gall="myGallery"
+  ><i class="fas fa-play-circle"></i
+></a>
+</div>
+
+
+
+<!-- video -->
+
                 
                 <div class="row justify-content-center text-center">
                     <div class="col-md-4">
@@ -270,5 +302,20 @@
         </div>
     </footer>     
     <script src="./servicios-2.js"></script>   
+
+    <script type="text/javascript" src="./jquery/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="./venobox/venobox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $(".venobox").venobox({
+            closeColor: "#f4f4f4",
+            spinColor: "#f4f4f4",
+            arrowsColor: "#f4f4f4",
+            closeBackground: "#17191D",
+            overlayColor: "rgba(23,25,29,0.8)",
+          });
+        });
+      </script>
 </body>
 </html>
