@@ -192,10 +192,21 @@ i {
     background:#fff;
     color: black;
     border: none;
+    padding: 10px 10px;
+
 }
 #boton-show:hover{
     background: rgb(216, 15, 15);
     color:#fff
+}
+
+#boton-cv:hover{
+    background: rgb(216, 15, 15);
+    color:#fff
+}
+#boton-cv{
+    border-radius: 10%;
+
 }
 
 
@@ -237,9 +248,11 @@ i {
 /* Section-2 */
 
 .section-2 .container-fluid {
-    background-image: url(/Miweb/img/background1.png);
+    background-image: url(/Miweb/MisImg/background1.png);
     background-size: cover;
     background-attachment: fixed;
+    
+
 }
 
 .section-2 .heading-1 {
@@ -255,13 +268,16 @@ i {
     font-family: 'Poppins', sans-serif;
     color: whitesmoke;
     margin-bottom: 7%;
+
 }
 
 .section-2 .btn {
     margin-bottom: 15%;
     width: 30%;
     padding: 2% 5%;
+
 }
+
 
 
 
@@ -354,6 +370,22 @@ color: red;
         font-size: 25px;
 
     }
+
+
+    .section-2 .container-fluid {
+        background-image: url(/Miweb/MisImg/background1-movil.png);
+        background-size: cover;
+        background-attachment: fixed;
+        
+    
+    }
+    #boton-show{
+        background:#fff;
+        color: black;
+        border: none;
+        padding: 10px 10px;
+    }
+
 }
 
 
