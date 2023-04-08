@@ -220,10 +220,9 @@ i {
 .section-1 .card-text,
 .para-1 {
     color: rgb(16, 14, 14);
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
-    text-align: justify;
 }
 
 
@@ -470,10 +469,12 @@ h1{
 }
 p{
     color: #777;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
 }
 .row{
     margin-top: 5%;
