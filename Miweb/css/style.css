@@ -35,66 +35,6 @@ nav ul li a:hover{
     color: red;
 }
 
-header{
-    background: radial-gradient(#fff,#e6e037);
-    height: 150px;
-
-  
-
-}
-
-.postpo{
-    background: radial-gradient(#fff,#b9c1c0);
-    height: 100px;
-    padding: 10PX;
-
-  
-
-}
-
-#chair-logo{
-    width: 8%;
-}
-#Sb-logo{
-    width: 15%;
-}
-
-
-.menu-icon{
-    width: 28px;
-    margin-left: 20px;
-    display: none;
-}
-
-@media only screen and (max-width:700px){
-
-    nav ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: rgb(200, 194, 198);
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
-    nav ul li {
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a {
-        color: #fff;
-    }
-
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-    }
-    
-    
-}
-
 i {
     font-family: fontawesome;
     }
@@ -105,8 +45,475 @@ i {
         color: rgb(216, 15, 15) !important;
         
     }
+
+    header{
+        background: radial-gradient(#fff,#e6e037);
+        height: 150px;
     
-   
+    }
+
+
+    #Sb-logo{
+        width: 15%;
+    }
+    
+    .menu-icon{
+        width: 28px;
+        margin-left: 20px;
+        display: none;
+    }
+    
+    
+    
+    @media only screen and (max-width:700px){
+    
+     nav ul {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: rgb(200, 194, 198);
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            
+        }
+        nav ul li {
+            display: block;
+            margin-right: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+        }
+    
+        .menu-icon{
+            display: block;
+            cursor: pointer;
+        }
+    
+    }
+    
+    /*  PAGINA BIENVENIDOS */
+    
+    .site-content-bienvenida{
+        background-image: url(/Miweb/MisImg/foto2-2.png);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
+    
+    }
+    .site-title-b {
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 70px;
+        color:rgb(235, 14, 14) ;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+    
+    }
+    
+    
+    .site-desc-b {
+        font-size: 25px;
+        padding-left: 1%;
+        color:rgb(12, 11, 11) ;
+        text-transform: uppercase;
+    
+    }
+    
+    #boton{
+        margin-left: 250px;
+        border-radius: 10%;
+    }
+    #boton:hover{
+        background: rgb(216, 15, 15);
+        color:#fff
+    }
+    .social i {
+        color: rgb(47, 45, 45);
+        font-size: 35px;
+    }
+    
+    .social i:hover {
+    color: red;
+    
+    }
+    
+    
+    @media screen and (max-width: 700px) {
+        #boton {
+            margin-left: 10px;
+            width: 121px; /* Ajusta el valor de width según tus necesidades */
+            text-align: center; /* Alinear el texto del botón al centro */
+        }
+    
+        .site-title-b {
+            margin-top: 30%;
+            margin-bottom: 6%;
+            font-size: 40px;
+            margin-left: 100px;
+           
+        }
+    
+        .site-desc-b {
+            font-size: 15px;
+           
+            margin-left: 100px;
+        }
+        .social i {
+            color: rgb(47, 45, 45);
+            font-size: 20px;
+            margin-left: 10px; 
+    
+        }
+    }
+    
+    /* SECCIÓN UNO :  PRESENTACIÓN */
+    
+    .section-1 .heading-1 {
+        margin-top: 7%;
+        color:rgb(216, 15, 15) ;
+    
+    }
+    .text-1{
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+    .section-1 .para-1 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+    .section-1 .card-text,
+    .para-1 {
+        color: rgb(16, 14, 14);
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+    }
+    
+    
+    .section-1 {
+        margin-bottom: 8%;
+    }
+    
+    .card {
+        width: 20rem;
+    }
+    
+    button {
+        cursor: pointer;
+        transition:  all 0.3s ease 0s;
+    }
+    
+    button:hover {
+        transform: scale(1.02);
+    }
+    
+    
+    .content__section {
+        grid-area: content__section;
+        display: grid;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-areas: 
+        ". playlist__one .";
+        margin-bottom: 60px;
+        background-color: var(--white);
+        padding-top: 60px;
+    
+    
+    }
+    
+    .playlist__one {
+        grid-area: playlist__one;
+    }
+    
+    .playlist__title {
+        margin: 30px 0;
+        font-family: var(--titles);
+        font-size: 2.5rem;
+    
+    
+    }
+    
+    .videos {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-gap: 20px;
+    }
+    
+    .video {
+        height: 40vh;
+        grid-column-start: span 3;
+        position: relative;
+        transition:  all 0.3s ease 0s;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .video:hover {
+        transform: scale(1.02);
+    }
+    
+    .video i {
+        cursor: pointer;
+        font-size: 60px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #f4f4f4;
+        opacity: 0.85;
+        transition:  all 0.3s ease 0s;
+    }
+    
+    .video i:hover {
+        opacity: 1;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        .video {
+            grid-column-start: span 6;
+            height: 240px;
+        }
+    
+    }
+
+    @media screen and (max-width: 700px) {
+        .section-1 .card {
+            width: 100%;
+        }
+    }
+
+    
+    @media only screen and (max-width: 800px) {
+        .video {
+            grid-column-start: span 12;
+        }
+    }
+    @media (max-width:791px){
+        
+    .creations__grid{
+        margin-bottom: 600px;
+    }
+    
+    }
+
+
+    @media screen and (max-width: 320px) {
+
+
+
+    }
+    
+    /* FORMACIÓN  */
+    
+    .text-sandra{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    
+    .course{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    p{
+        color: #777;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+    }
+    .row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .course-col{
+        flex-basis: 31%;
+        background: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .course-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0,0.2);
+    
+    }
+    
+    #boton-cv:hover{
+        background: rgb(216, 15, 15);
+        color:#fff
+    }
+    #boton-cv{
+        border-radius: 10%;
+    
+    }
+    
+    @media(max-width:700px){
+        .row{
+            flex-direction: column;
+        }
+    }
+    
+    /* PERFIL AMAZON BOOKS */
+    
+    
+    .section-2 .container-fluid {
+        background-image: url(/Miweb/MisImg/background1.png);
+        background-size: cover;
+        background-attachment: fixed;
+        
+    
+    }
+    
+    .section-2 .heading-1 {
+        margin-top: 20%;
+        margin-bottom: 4%;
+        font-family: 'Poppins', sans-serif;
+        width: 80%;
+        color: whitesmoke;
+    }
+    
+    .section-2 .para {
+        width: 80%;
+        font-family: 'Poppins', sans-serif;
+        color: whitesmoke;
+        margin-bottom: 7%;
+    
+    }
+    
+    .section-2 .btn {
+        margin-bottom: 15%;
+        width: 30%;
+        padding: 2% 5%;
+    
+    }
+    
+    #boton-show{
+        background:#fff;
+        color: black;
+        border: none;
+        padding: 10px 10px;
+    
+    }
+    #boton-show:hover{
+        background: rgb(216, 15, 15);
+        color:#fff
+    }
+    
+    @media(max-width:700px){
+    
+        .section-2 .container-fluid {
+            background-image: url(/Miweb/MisImg/background1-movil.png);
+            background-size: cover;
+            background-attachment: fixed;
+            
+        
+        }
+        #boton-show{
+            background:#fff;
+            color: black;
+            border: none;
+            width: 120px;
+        }
+        #banner-mi{
+            width: 90%;
+        }
+    }
+    
+    /* SERVICIOS IMAGENES GRID */
+    .section-4 {
+        margin-top: 8%;
+    
+    
+    }
+    
+    .section-4 a {
+        color: rgb(216, 15, 15);
+        font-size: 40px;
+        text-decoration: none;
+    }
+    
+    .section-4 .para-1 {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 7%;
+        font-size: 23px;
+    }
+    
+    #categorias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); /* Cambiar a 1fr para ocupar el espacio disponible */
+        grid-gap: 10px;
+    }
+    
+    @media screen and (max-width: 700px) {
+        
+        .section-4 .col-md-7 img{
+            width: 100%;
+        }
+    }
+    
+    /* FOOTER  */
+    
+    .social i {
+        color: rgb(47, 45, 45);
+        font-size: 35px;
+    }
+    
+    .social i:hover {
+    color: red;
+    
+    }
+    .fa-heart-o{
+        color: red;
+    
+    }
+    footer h5{
+        background: radial-gradient(#fff,#e6e037);
+        height: 100px;
+        padding: 40px;
+    }
+    
+    @media screen and (max-width: 700px) {
+    
+        footer h5{
+            font-size: 14px;
+        }
+    
+        .social i {
+            color: rgb(47, 45, 45);
+            font-size: 20px;
+            margin-left: 10px;
+    
+        }
+    
+    }
+
+
+
+
+/*  POSTPRODUCCIÓN WEB */
+
 
 .site-content {
     background-image: url(/Miweb/MisImg/foto1.png);
@@ -114,16 +521,6 @@ i {
     background-size: cover;
     height: 100%;
 }
-
-.site-content-bienvenida{
-    background-image: url(/Miweb/MisImg/foto2-2.png);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-
-}
-
-
 
 .site-title {
     margin-top: 30%;
@@ -139,441 +536,21 @@ i {
     padding-left: 15%;
     color: rgb(16, 14, 14);
 }
-
-.site-title-b {
-    margin-top: 30%;
-    margin-bottom: 6%;
-    font-size: 70px;
-    color:rgb(235, 14, 14) ;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-
-}
-
-
-.site-desc-b {
-    font-size: 25px;
-    padding-left: 1%;
-    color:rgb(12, 11, 11) ;
-    text-transform: uppercase;
-
-    
-
-
-}
-
-
-
-.site-btn1 {
-    margin-left: 20%;
-    background-color: black;
-    color: white;
-} 
-
-.site-btn2 {
+.custom-btn {
     background-color: white;
-}
-
-.site-btn1, .site-btn2 {
-    margin-top: 5%;
-    margin-bottom: 40%;
-} 
-
-#boton{
-    margin-left: 250px;
-    border-radius: 10%;
-}
-#boton:hover{
-    background: rgb(216, 15, 15);
-    color:#fff
-}
-
-#boton-show{
-    background:#fff;
     color: black;
-    border: none;
-    padding: 10px 10px;
-
-}
-#boton-show:hover{
-    background: rgb(216, 15, 15);
-    color:#fff
-}
-
-#boton-cv:hover{
-    background: rgb(216, 15, 15);
-    color:#fff
-}
-#boton-cv{
-    border-radius: 10%;
-
-}
-
-
-/* Section-1 */
-
-.section-1 .heading-1 {
-    margin-top: 7%;
-    color:rgb(216, 15, 15) ;
-
-}
-
-.text-1{
-    text-transform: uppercase;
-    font-size: rem;
-}
-
-.section-1 .para-1 {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 5%;
-}
-
-.section-1 .card-text,
-.para-1 {
-    color: rgb(16, 14, 14);
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
-}
-
-
-.section-1 {
-    margin-bottom: 8%;
-}
-
-.card {
-    width: 20rem;
-}
-
-/* Section-2 */
-
-.section-2 .container-fluid {
-    background-image: url(/Miweb/MisImg/background1.png);
-    background-size: cover;
-    background-attachment: fixed;
-    
-
-}
-
-.section-2 .heading-1 {
-    margin-top: 20%;
-    margin-bottom: 4%;
-    font-family: 'Poppins', sans-serif;
-    width: 80%;
-    color: whitesmoke;
-}
-
-.section-2 .para {
-    width: 80%;
-    font-family: 'Poppins', sans-serif;
-    color: whitesmoke;
-    margin-bottom: 7%;
-
-}
-
-.section-2 .btn {
-    margin-bottom: 15%;
-    width: 30%;
-    padding: 2% 5%;
-
-}
-
-
-/* Section-3 */
-
-.section-3 {
-    margin-top: 6%;
-}
-
-.section-3 i {
-    color: rgb(216, 15, 15);
-}
-
-.section-3 p {
-    color: rgba(0, 0, 0, 0.59);
-}
-
-/* Section-4 */
-
-.section-4 {
-    margin-top: 8%;
-
-
-}
-
-.section-4 a {
-    color: rgb(216, 15, 15);
-    font-size: 40px;
-    text-decoration: none;
-}
-
-.section-4 .para-1 {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 7%;
-    font-size: 23px;
-}
-
-#categorias {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); /* Cambiar a 1fr para ocupar el espacio disponible */
-    grid-gap: 10px;
-}
-
-
-
-
-
-
-/* Footer */
-
+    border: 1px solid black;
+  }
+  
  
-.social i {
-    color: rgb(47, 45, 45);
-    font-size: 35px;
-}
-
-.social i:hover {
-color: red;
-
-}
-.fa-heart-o{
-    color: red;
-
-}
-footer h5{
-    background: radial-gradient(#fff,#e6e037);
-    height: 100px;
-    padding: 40px;
-}
-
-@media screen and (max-width: 700px) {
-    .section-1 .card {
-        width: 100%;
-    }
-    
-    .section-4 .col-md-7 img{
-        width: 100%;
-    }
-    .site-desc {
-       
-        color: rgb(231, 220, 220);
-    }
-
-    #boton {
-        margin-left: 10px;
-        width: 121px; /* Ajusta el valor de width según tus necesidades */
-        text-align: center; /* Alinear el texto del botón al centro */
-    }
-    
-    .site-title-b {
-        margin-top: 30%;
-        margin-bottom: 6%;
-        font-size: 40px;
-        margin-left: 100px;
-       
-    }
-    footer h5{
-        font-size: 14px;
-    }
-    
-    .site-desc-b {
-        font-size: 15px;
-       
-        margin-left: 100px;
-    }
-   
-    .social i {
-        color: rgb(47, 45, 45);
-        font-size: 20px;
-        margin-left: 10px;
-
-        
-
-    }
-
-
-    .section-2 .container-fluid {
-        background-image: url(/Miweb/MisImg/background1-movil.png);
-        background-size: cover;
-        background-attachment: fixed;
-        
-    
-    }
-    #boton-show{
-        background:#fff;
-        color: black;
-        border: none;
-        width: 120px;
-    }
-
-    #banner-mi{
-        width: 90%;
-    }
-
-    
-}
-
-
-
-@media screen and (max-width: 320px) {
-    .site-content .site-title  {
-        font-size: 30px;
-        padding-left: 15%;
-    }
-    
-    
-    .site-content .site-btn2 {
-        display: none;
-    }
-    
-    .site-content .site-btn1 {
-        margin-left: 15%;
-    }
-    
-    .section-1 .heading-1,
-    .section-1 .heading-2 {
-        font-size: 25px;
-    }
-    
-    .section-1 .col-md-4 {
-        padding: 5%;
-        margin-left: 8%;
-    }
-    
-    .section-1 .card {
-        width: 15rem;
-    }
-    
-    .section-4 .col-md-5 {
-        padding: 0% 15%;
-    }
-    
-    footer input[type="button"] {
-        margin-top: 5%;
-    }
-
-    /*  */
-
-    
-}
-
-/* Contacto page */
-
-
-.contact-col{
-    flex-basis: 48%;
-    margin-bottom: 30px;
-}
-.contact-col div{
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-.contact-col div .fa{
-    font-size: 28px;
-    color: #f44336;
-    margin: 10px;
-    margin-right: 30px;
-}
-.contact-col div p{
-    padding: 0;
-}
-.contact-col div h5{
-    font-size: 20px;
-    margin-bottom:5px;
-    color: #555;
-    font-weight: 400;
-}
-.contact-col input,.contact-col textarea{
-    width: 100%;
-    padding: 15px ;
-    margin-bottom: 17px;
-    outline: none;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-form{
-    width: 50%;
-    height: 600px;
-    margin: 0 auto;
-}
-
-/* pospo produccion - trabajos  */
-
-/* course */
-
-.sub-header2{
-    height: 50vh;
-    width: 100%;
-    background-image: url(https://images.pexels.com/photos/8102677/pexels-photo-8102677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: rgb(238, 223, 223);
-}
-.sub-header2 h1{
-    margin-top: 100px;
-}
-
-
-/* courses */
-
-.text-sandra{
-    font-size: 2.5rem;
+  #contactame{
     text-transform: uppercase;
-}
 
-.course{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-h1{
-    font-size: 36px;
-    font-weight: 600;
-}
-p{
-    color: #777;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-}
-.row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-.course-col{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-h3{
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0,0.2);
-}
-@media(max-width:700px){
-    .row{
-        flex-direction: column;
-    }
-}
+  }
 
-/* Campus */
+
+
+/* IMAGENES SKILLS */
 
 .campus{
     width: 80%;
@@ -620,7 +597,7 @@ h3{
 bottom: 49%;
 opacity: 1;
 }
-/* Facilities */
+/* EQUIPO E INSTALACIONES */
 
 .facilities{
     width: 80%;
@@ -647,102 +624,52 @@ opacity: 1;
     text-align: left;
 }
 
-/* trabajos  */
 
 
-button {
-    cursor: pointer;
-    transition:  all 0.3s ease 0s;
+/* CONTACTO PAGE */
+
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom:5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input,.contact-col textarea{
+    width: 100%;
+    padding: 15px ;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+form{
+    width: 50%;
+    height: 600px;
+    margin: 0 auto;
 }
 
-button:hover {
-    transform: scale(1.02);
-}
 
 
-.content__section {
-    grid-area: content__section;
-    display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-areas: 
-    ". playlist__one .";
-    margin-bottom: 60px;
-    background-color: var(--white);
-    padding-top: 60px;
-
-
-}
-
-.playlist__one {
-    grid-area: playlist__one;
-}
-
-.playlist__title {
-    margin: 30px 0;
-    font-family: var(--titles);
-    font-size: 2.5rem;
-
-
-}
-
-.videos {
-    display: grid;
-    grid-template-columns: repeat(6, 2fr);
-    grid-gap: 20px;
-}
-
-.video {
-    height: 40vh;
-    grid-column-start: span 3;
-    position: relative;
-    transition:  all 0.3s ease 0s;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.video:hover {
-    transform: scale(1.02);
-}
-
-.video i {
-    cursor: pointer;
-    font-size: 60px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #f4f4f4;
-    opacity: 0.85;
-    transition:  all 0.3s ease 0s;
-}
-
-.video i:hover {
-    opacity: 1;
-}
-
-@media only screen and (max-width: 1200px) {
-    .video {
-        grid-column-start: span 6;
-        height: 240px;
-    }
-
-}
-
-@media only screen and (max-width: 800px) {
-    .video {
-        grid-column-start: span 12;
-    }
-}
-@media (max-width:791px){
-    
-.creations__grid{
-    margin-bottom: 600px;
-}
-
-}
-
-/*  */
+/*  RESPONSIVO PAGINAS */
 
 @media screen and (max-width: 390px) {
     .section-1 .card {
@@ -801,4 +728,74 @@ button:hover {
     }
 }
 
-/*  RESPONSIVO */
+
+@media screen and (max-width: 700px) {
+  
+    .site-desc {
+       
+        color: rgb(231, 220, 220);
+
+    
+}
+
+}
+
+@media screen and (max-width: 320px) {
+    .site-content .site-title  {
+        font-size: 30px;
+        padding-left: 15%;
+    }
+    
+    
+    .site-content .site-btn2 {
+        display: none;
+    }
+    
+    .site-content .site-btn1 {
+        margin-left: 15%;
+    }
+    
+    .section-1 .heading-1,
+    .section-1 .heading-2 {
+        font-size: 25px;
+    }
+    
+    .section-1 .col-md-4 {
+        padding: 5%;
+        margin-left: 8%;
+    }
+    
+    .section-1 .card {
+        width: 15rem;
+    }
+    
+    .section-4 .col-md-5 {
+        padding: 0% 15%;
+    }
+    
+    footer input[type="button"] {
+        margin-top: 5%;
+    }
+
+    /*  */
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
