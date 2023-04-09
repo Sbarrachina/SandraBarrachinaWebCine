@@ -220,6 +220,7 @@ i {
 
 .text-1{
     text-transform: uppercase;
+    font-size: rem;
 }
 
 .section-1 .para-1 {
@@ -279,9 +280,6 @@ i {
 }
 
 
-
-
-
 /* Section-3 */
 
 .section-3 {
@@ -300,13 +298,9 @@ i {
 
 .section-4 {
     margin-top: 8%;
-}
 
-.section-4 .row .col-md-7,
-.col-md-5 {
-    margin-top: 10%;
-    margin-bottom: 10%;
-} 
+
+}
 
 .section-4 a {
     color: rgb(216, 15, 15);
@@ -321,8 +315,21 @@ i {
     font-size: 23px;
 }
 
+#categorias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* Cambiar a 1fr para ocupar el espacio disponible */
+    grid-gap: 10px;
+}
+
+
+
+
+
+
 /* Footer */
 
+ 
 .social i {
     color: rgb(47, 45, 45);
     font-size: 35px;
@@ -331,6 +338,15 @@ i {
 .social i:hover {
 color: red;
 
+}
+.fa-heart-o{
+    color: red;
+
+}
+footer h5{
+    background: radial-gradient(#fff,#e6e037);
+    height: 100px;
+    padding: 40px;
 }
 
 @media screen and (max-width: 700px) {
@@ -346,28 +362,35 @@ color: red;
         color: rgb(231, 220, 220);
     }
 
-    #boton{
+    #boton {
         margin-left: 10px;
-        width: 4px 4px 4px;
+        width: 121px; /* Ajusta el valor de width según tus necesidades */
+        text-align: center; /* Alinear el texto del botón al centro */
     }
+    
     .site-title-b {
         margin-top: 30%;
         margin-bottom: 6%;
-        font-size: 50px;
-        margin-left: 0px;
+        font-size: 40px;
+        margin-left: 100px;
        
     }
-    
+    footer h5{
+        font-size: 14px;
+    }
     
     .site-desc-b {
-        font-size: 20px;
+        font-size: 15px;
        
-        margin-left: 0px;
+        margin-left: 100px;
     }
    
     .social i {
         color: rgb(47, 45, 45);
-        font-size: 25px;
+        font-size: 20px;
+        margin-left: 10px;
+
+        
 
     }
 
@@ -383,9 +406,14 @@ color: red;
         background:#fff;
         color: black;
         border: none;
-        padding: 10px 10px;
+        width: 120px;
     }
 
+    #banner-mi{
+        width: 90%;
+    }
+
+    
 }
 
 
@@ -426,6 +454,10 @@ color: red;
     footer input[type="button"] {
         margin-top: 5%;
     }
+
+    /*  */
+
+    
 }
 
 /* Contacto page */
@@ -487,7 +519,12 @@ form{
 }
 
 
+/* courses */
 
+.text-sandra{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
 
 .course{
     width: 80%;
@@ -704,3 +741,64 @@ button:hover {
 }
 
 }
+
+/*  */
+
+@media screen and (max-width: 390px) {
+    .section-1 .card {
+        width: 100%;
+    }
+
+    .section-4 .col-md-7 img {
+        width: 100%;
+    }
+
+    .site-desc {
+        color: rgb(231, 220, 220);
+    }
+
+    #boton {
+        margin-left: 10px;
+        width: 4px 4px 4px;
+    }
+
+    .site-title-b {
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 50px;
+        margin-left: 0px;
+    }
+
+    footer h5 {
+        font-size: 14px;
+    }
+
+    .site-desc-b {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    .social i {
+        color: rgb(47, 45, 45);
+        font-size: 25px;
+    }
+
+    .section-2 .container-fluid {
+        background-image: url(/Miweb/MisImg/background1-movil.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #boton-show {
+        background: #fff;
+        color: black;
+        border: none;
+        padding: 10px 10px;
+    }
+
+    #banner-mi {
+        width: 90%;
+    }
+}
+
+/*  RESPONSIVO */
