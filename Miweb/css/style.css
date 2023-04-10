@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    
 
 }
 
@@ -104,9 +105,9 @@ i {
     
     }
     .site-title-b {
-        margin-top: 30%;
+        margin-top: 10%;
         margin-bottom: 6%;
-        font-size: 70px;
+        font-size: 60px;
         color:rgb(235, 14, 14) ;
         font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
@@ -125,6 +126,7 @@ i {
     #boton{
         margin-left: 250px;
         border-radius: 10%;
+        margin-bottom: 200px;
     }
     #boton:hover{
         background: rgb(216, 15, 15);
@@ -512,7 +514,20 @@ i {
 
 
 
-/*  POSTPRODUCCIÓN WEB */
+/*  POSTPRODUCCIÓN PAGE */
+/* BIENVENIDA POST POSTPO */
+
+#boton-2{
+    margin-left: 360px;
+    border-radius: 10%;
+    margin-top: 20px;
+    margin-bottom: 220px;
+}
+#boton-2:hover{
+    background: rgb(216, 15, 15);
+    color:#fff
+}
+
 
 
 .site-content {
@@ -523,11 +538,12 @@ i {
 }
 
 .site-title {
-    margin-top: 30%;
+    margin-top: 10%;
     margin-bottom: 6%;
     font-size: 50px;
     color:rgb(216, 15, 15) ;
     font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 
 
@@ -535,7 +551,76 @@ i {
     font-size: 20px;
     padding-left: 15%;
     color: rgb(16, 14, 14);
+    text-transform: uppercase;
+    margin-top: -50px;
+
 }
+
+@media screen and (max-width: 700px) {
+    #boton-2 {
+        margin-left: 160px;
+        width: 121px; /* Ajusta el valor de width según tus necesidades */
+        text-align: center; /* Alinear el texto del botón al centro */
+    }
+
+    .site-title {
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 40px;
+        margin-left: 100px;
+       
+    }
+
+    .site-desc{
+        font-size: 18px;
+        margin-left: 100px;
+        color: #fff;
+        padding: 10px;
+        margin-top: 1px;
+    }
+    .movil-social i{
+        color: #fff;
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+    .section-1 .card {
+        width: 100%;
+    }
+
+    
+
+    #boton-2 {
+        margin-left: 10px;
+        width: 4px 4px 4px;
+    }
+
+    .site-title {
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 50px;
+        margin-left: 0px;
+    }
+
+  
+    .site-desc{
+        font-size: 20px;
+        margin-left: 0px;
+        
+    }
+
+     
+    
+
+}
+
+
+
+
+/*  */
+
+
 .custom-btn {
     background-color: white;
     color: black;
@@ -680,9 +765,7 @@ form{
         width: 100%;
     }
 
-    .site-desc {
-        color: rgb(231, 220, 220);
-    }
+   
 
     #boton {
         margin-left: 10px;
@@ -729,16 +812,8 @@ form{
 }
 
 
-@media screen and (max-width: 700px) {
-  
-    .site-desc {
-       
-        color: rgb(231, 220, 220);
 
-    
-}
 
-}
 
 @media screen and (max-width: 320px) {
     .site-content .site-title  {
