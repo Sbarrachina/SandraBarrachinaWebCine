@@ -213,7 +213,8 @@ i {
         transform: scale(1.02);
     }
     
-    
+    /*  VIDEOS GALERIA TRABAJOS  */
+
     .content__section {
         grid-area: content__section;
         display: grid;
@@ -221,7 +222,7 @@ i {
         grid-template-areas: 
         ". playlist__one .";
         margin-bottom: 60px;
-        background-color: var(--white);
+        background-color: #fff;
         padding-top: 60px;
     
     
@@ -233,21 +234,23 @@ i {
     
     .playlist__title {
         margin: 30px 0;
-        font-family: var(--titles);
-        font-size: 2.5rem;
-    
+        font-family: 'Poppins', sans-serif;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: red;
     
     }
     
     .videos {
         display: grid;
-        grid-template-columns: repeat(6, 2fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
     }
     
     .video {
-        height: 40vh;
-        grid-column-start: span 3;
+        height: 50vh;
+        grid-column-start: span 1;
+
         position: relative;
         transition:  all 0.3s ease 0s;
         background-size: cover;
@@ -304,12 +307,6 @@ i {
     }
 
 
-    @media screen and (max-width: 320px) {
-
-
-
-    }
-    
     /* FORMACIÓN  */
     
     .text-sandra{
@@ -495,6 +492,10 @@ i {
         height: 100px;
         padding: 40px;
     }
+    #contactame{
+        text-transform: uppercase;
+    
+      }
     
     @media screen and (max-width: 700px) {
     
@@ -512,8 +513,6 @@ i {
     }
 
 
-
-
 /*  POSTPRODUCCIÓN PAGE */
 /* BIENVENIDA POST POSTPO */
 
@@ -527,7 +526,6 @@ i {
     background: rgb(216, 15, 15);
     color:#fff
 }
-
 
 
 .site-content {
@@ -611,29 +609,7 @@ i {
     }
 
      
-    
-
 }
-
-
-
-
-/*  */
-
-
-.custom-btn {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-  }
-  
- 
-  #contactame{
-    text-transform: uppercase;
-
-  }
-
-
 
 /* IMAGENES SKILLS */
 
@@ -682,31 +658,75 @@ i {
 bottom: 49%;
 opacity: 1;
 }
-/* EQUIPO E INSTALACIONES */
 
-.facilities{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
+
+/*  GALERIA DE VIDEOS */
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
-.facilities-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
+
+.galeria {
+    height: 30vh;
+    grid-column-start: span 1;
+
+    position: relative;
+    transition:  all 0.3s ease 0s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.facilities-col img{
-    width: 100%;
-    border-radius: 10px;
+
+.galeria:hover {
+    transform: scale(1.02);
 }
-.facilities-col p{
-    padding: 0;
+
+.galeria i {
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #f4f4f4;
+    opacity: 0.85;
+    transition:  all 0.3s ease 0s;
 }
-.facilities-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: left;
+
+.galeria i:hover {
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .galeria {
+        grid-column-start: span 6;
+        height: 240px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .section-1 .card {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .galeria{
+        grid-column-start: span 12;
+    }
+}
+@media (max-width:791px){
+    
+.creations__grid{
+    margin-bottom: 600px;
+}
+
 }
 
 
@@ -813,8 +833,6 @@ form{
 
 
 
-
-
 @media screen and (max-width: 320px) {
     .site-content .site-title  {
         font-size: 30px;
@@ -852,7 +870,6 @@ form{
         margin-top: 5%;
     }
 
-    /*  */
 
     
 }
