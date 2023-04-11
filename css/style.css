@@ -98,7 +98,7 @@ i {
     /*  PAGINA BIENVENIDOS */
     
     .site-content-bienvenida{
-        background-image: url(/Miweb/MisImg/foto2-2.png);
+        background-image: url(/MisImg/foto2-2.png);
         background-attachment: fixed;
         background-size: cover;
         height: 100%;
@@ -376,7 +376,7 @@ i {
     
     
     .section-2 .container-fluid {
-        background-image: url(/Miweb/MisImg/background1.png);
+        background-image: url(/MisImg/background1.png);
         background-size: cover;
         background-attachment: fixed;
         
@@ -421,7 +421,7 @@ i {
     @media(max-width:700px){
     
         .section-2 .container-fluid {
-            background-image: url(/Miweb/MisImg/background1-movil.png);
+            background-image: url(/MisImg/background1-movil.png);
             background-size: cover;
             background-attachment: fixed;
             
@@ -529,7 +529,7 @@ i {
 
 
 .site-content {
-    background-image: url(/Miweb/MisImg/foto1.png);
+    background-image: url(/MisImg/foto1.png);
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
@@ -814,7 +814,7 @@ form{
     }
 
     .section-2 .container-fluid {
-        background-image: url(/Miweb/MisImg/background1-movil.png);
+        background-image: url(/MisImg/background1-movil.png);
         background-size: cover;
         background-attachment: fixed;
     }
