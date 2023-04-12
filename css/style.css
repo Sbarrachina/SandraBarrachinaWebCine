@@ -731,6 +731,153 @@ opacity: 1;
 
 
 
+   
+/* PÁGINA EVENTOS */
+
+/* --------------- Site title ---------------- */
+main .site-title2{
+    background: url('https://images.pexels.com/photos/1448709/pexels-photo-1448709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+main .site-title2 .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+}
+
+main .site-title2 h1, h3{
+    margin: .3rem;
+}
+
+main .site-title2 .btn{
+    margin: 1.8rem;
+    background: #a1c4fd;
+}
+
+
+
+main .site-title2 .btn:hover{
+    border: 1px solid rgb(246, 238, 238);
+    color: rgb(20, 18, 18);
+    background: #ecedef;
+}
+
+/* --------x------ Site title --------x------- */
+
+
+/* --------------- Blog Carousel ------------ */
+
+
+
+:root{
+
+    /*      Theme colors        */
+ 
+    --midnight: #c11e1e;
+
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #f98383 0%, #f9a2a2 100%);
+
+   
+}
+
+
+
+main .blog {
+    height: 100vh;
+    width: 100%;
+}
+
+main .blog .blog-post {
+    padding-top: 6rem;
+}
+
+main .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    margin: 2rem auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -15px 20px rgba(0, 0, 0, 0.2); /* Utilizar inset para aplicar la sombra en la parte inferior */
+
+    gap: 2rem;
+}
+
+
+
+main .blog-content .blog-title {
+    padding: 2rem 0;
+    }
+    
+    main .blog-content .btn-blog {
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+    border-radius: 20%;
+    }
+    
+    main .blog-content span {
+    display: block;
+    }
+    
+    section .container .owl-nav {
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+    }
+
+    
+.flecha{
+    color: black;
+    font-size: 30px;
+}
+i {
+    padding: 10px;
+}
+
+
+
+
+/* -------x------- Blog Carousel -----x------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* CONTACTO PAGE */
 
 
