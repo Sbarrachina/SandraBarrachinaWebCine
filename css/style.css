@@ -81,11 +81,13 @@ i {
         nav ul li {
             display: block;
             margin-right: 50px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            height: 100%;
         }
         nav ul li a {
-            color: #fff;
+            color: #090808;
+            font-size: 12px;
         }
     
         .menu-icon{
@@ -773,7 +775,7 @@ opacity: 1;
 
 /* --------------- Site title ---------------- */
 main .site-title2{
-    background: url('https://images.pexels.com/photos/1448709/pexels-photo-1448709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background: url('/MisImg/fondo-eventos.png');
     background-size: cover;
     height: 60vh;
     display: flex;
@@ -783,18 +785,34 @@ main .site-title2{
 }
 
 main .site-title2 .site-background{
-    padding-top: 10rem;
+    padding-top: 2rem;
     text-align: center;
-    color: white;
+    color: rgb(15, 14, 14);
+    text-transform: uppercase;
 }
 
 main .site-title2 h1, h3{
     margin: .3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.site-title-c {
+    margin-top: 10%;
+    margin-bottom: 6%;
+    font-size: 70px;
+    color:rgb(235, 14, 14) ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
 }
 
 main .site-title2 .btn{
     margin: 1.8rem;
-    background: #a1c4fd;
+    background: #eee;
+
 }
 
 
@@ -802,7 +820,28 @@ main .site-title2 .btn{
 main .site-title2 .btn:hover{
     border: 1px solid rgb(246, 238, 238);
     color: rgb(20, 18, 18);
-    background: #ecedef;
+    background: var(--sky);
+}
+
+
+
+@media screen and (max-width: 390px) {
+       
+
+
+    .site-title-c {
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 40px;
+        margin-left: 0px;
+    }
+    main .site-title2 .site-background{
+        padding-top: 4rem;
+        text-align: center;
+        color: rgb(247, 242, 242);
+        text-transform: uppercase;
+    }
+
 }
 
 /* --------x------ Site title --------x------- */
