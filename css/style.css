@@ -154,7 +154,7 @@ i {
             margin-top: 30%;
             margin-bottom: 6%;
             font-size: 40px;
-            margin-left: 100px;
+            margin-left: 200px;
            
         }
     
@@ -170,6 +170,36 @@ i {
     
         }
     }
+    @media screen and (max-width: 390px) {
+       
+        #boton {
+           display: none;
+        }
+    
+        .site-title-b {
+            margin-top: 30%;
+            margin-bottom: 6%;
+            font-size: 30px;
+            margin-left: 70px;
+        }
+    
+    
+        .site-desc-b {
+            font-size: 10px;
+            margin-left: 70px;
+            color: #fff;
+        }
+    
+        .social i {
+            color: rgb(47, 45, 45);
+            font-size: 20px;
+            width: 20px;
+        }
+        
+
+    }
+
+
     
     /* SECCIÓN UNO :  PRESENTACIÓN */
     
@@ -934,31 +964,11 @@ form{
 
    
 
-    #boton {
-        margin-left: 10px;
-        width: 4px 4px 4px;
-    }
-
-    .site-title-b {
-        margin-top: 30%;
-        margin-bottom: 6%;
-        font-size: 50px;
-        margin-left: 0px;
-    }
-
     footer h5 {
         font-size: 14px;
     }
 
-    .site-desc-b {
-        font-size: 20px;
-        margin-left: 0px;
-    }
-
-    .social i {
-        color: rgb(47, 45, 45);
-        font-size: 25px;
-    }
+   
 
     .section-2 .container-fluid {
         background-image: url(/MisImg/background1-movil.png);
