@@ -504,10 +504,6 @@ i {
       }
       
     
-  
-
-  
-    
     @media screen and (max-width: 700px) {
         
         .section-4 .col-md-7 img{
@@ -772,8 +768,6 @@ opacity: 1;
 
 }
 
-
-
    
 /* PÁGINA EVENTOS */
 
@@ -856,10 +850,15 @@ main .blog-content {
 
 
 
-main .blog-content .blog-title {
+    main .blog-content .blog-title {
     padding: 2rem 0;
     }
-    
+    main .blog-content .blog-title h3 {
+        margin-top: -20px;
+        font-size: 22px;
+        }
+
+
     main .blog-content .btn-blog {
     padding: .7rem 2rem;
     background: #eeee;
