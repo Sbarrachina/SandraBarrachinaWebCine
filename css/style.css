@@ -1213,8 +1213,123 @@ margin-left: 150px;
     }
 
 
+/* Blog EVENTOS */
 
 
+/* ---------------- Site Content- BLOG ----------------*/
+/* --------------- Site title ---------------- */
+main .site-title3{
+    background: url('/MisImg/foto2.png');
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+main .site-title3 .site-background{
+    padding-top: 2rem;
+    text-align: center;
+    color: rgb(15, 14, 14);
+    text-transform: uppercase;
+}
+
+main .site-title3 h1, h3{
+    margin: .3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.site-title-d {
+    margin-top: 10%;
+    margin-bottom: 6%;
+    font-size: 70px;
+    color:rgb(19, 14, 14) ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
+}
+
+main .site-title3 .btn{
+    margin: 1.8rem;
+    background: #eee;
+
+}
+
+
+
+main .site-title3 .btn:hover{
+    border: 1px solid rgb(246, 238, 238);
+    color: rgb(20, 18, 18);
+    background: var(--sky);
+}
+
+
+
+@media screen and (max-width: 390px) {
+       
+
+
+    .site-title-d {
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 40px;
+        margin-left: 0px;
+    }
+    main .site-title3 .site-background{
+        padding-top: 4rem;
+        text-align: center;
+        color: rgb(247, 242, 242);
+        text-transform: uppercase;
+    }
+
+}
+
+/*  */
+
+.site-content-blog .sidebar .popular-post2 .post-content{
+    padding: 1rem 0;
+    margin-left: -50px;
+}
+.popular-post2 {
+    margin-top: -10px;
+}
+
+.site-content-blog .sidebar .popular-post2 h2{
+    padding-top: 8rem;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.site-content-blog .sidebar .popular-post2 .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+
+.site-content-blog .sidebar .popular-post2 .post-title a{
+    font-size: 1rem;
+}
+
+
+
+/*  */
+
+.fotos-festival{
+    width: 40vw;
+    margin-left: 10px;
+}
+
+.videos-post{
+    margin-left: 40px;
+}
+
+/* -------x-------- Site Content --------x-------*/
 
   
 
