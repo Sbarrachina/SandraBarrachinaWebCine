@@ -99,7 +99,19 @@
                         <img src="/MisImg/EVENTOS/mequi0.png" alt="post-1">
                         <div class="blog-title">
                             <h3>Mequinenza Film Festival  </h3>
-                            <button class="btn btn-blog">Presentación</button>
+
+                            <button class="btn btn-blog" id="leer-mequinenza">
+                                Presentación &nbsp;
+                              </button>
+                              
+                              <script>
+                              document.getElementById('leer-mequinenza').onclick = function() {
+                                window.location.href = '/Presentaciones.html';
+                              };
+                              </script>
+                              
+
+
                         </div>
                     </div>
 
@@ -214,13 +226,26 @@
                     
                 </div>
                 <div class="post-title">
-                    <a href="#"> Mequinenza International Film Festival | Mi experiencia como jurado</a>
+                    <a href="/Presentaciones.html"> Mequinenza International Film Festival | Mi experiencia como jurado</a>
                     <p>Tener la oportunidad de hacer de jurado en un festival, no pasa todos los días.
                          Una gran ilusión te embarga en el interior y solo tienes ganas de que llegue 
                          el momento de realizar el viaje y poder disfrutar de un festival diferente y
                           cercano.
                     </p>
-                    <button class="btn post-btn">Leer Más &nbsp; <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn post-btn" id="leer-mas-btn">
+                        Leer Más &nbsp;
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
+                      
+                      <script>
+                      document.getElementById('leer-mas-btn').onclick = function() {
+                        window.location.href = '/Presentaciones.html';
+                      };
+                      </script>
+                                     
+               
+               
+               
                 </div>
             </div>
             <hr>

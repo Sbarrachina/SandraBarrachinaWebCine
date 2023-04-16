@@ -1329,6 +1329,22 @@ main .site-title3 .btn:hover{
     margin-left: 40px;
 }
 
+
+
+@media screen and (max-width: 750px) {
+
+    .fotos-festival{
+        width: 100vw;
+        margin-left: 0px;
+    }
+    .videos-post{
+        margin-left: 0px;
+    }
+    iframe{
+        width: 100vw
+    } 
+}
+
 /* -------x-------- Site Content --------x-------*/
 
   
