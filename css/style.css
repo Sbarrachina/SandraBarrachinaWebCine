@@ -1323,10 +1323,20 @@ main .site-title3 .btn:hover{
 .fotos-festival{
     width: 40vw;
     margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.fotos-festival2{
+    width: 40vw;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .videos-post{
     margin-left: 40px;
+}
+hr{
+padding: 5px
 }
 
 
@@ -1336,6 +1346,10 @@ main .site-title3 .btn:hover{
     .fotos-festival{
         width: 100vw;
         margin-left: 0px;
+    }
+    .fotos-festival2{
+        width: 85vw;
+        margin: 0;
     }
     .videos-post{
         margin-left: 0px;
