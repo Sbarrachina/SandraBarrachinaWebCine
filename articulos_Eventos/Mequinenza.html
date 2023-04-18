@@ -107,7 +107,15 @@
                     <img src="/MisImg/EVENTOS/Superstar_evento.png" alt="post-4">
                     <div class="blog-title">
                         <h3>Superstar</h3>
-                        <button class="btn btn-blog">Show</button>
+                        <button class="btn btn-blog" id="leer-superstar">
+                            Show &nbsp;
+                          </button>
+                          
+                          <script>
+                          document.getElementById('leer-superstar').onclick = function() {
+                            window.location.href = '/articulos_Eventos/Superstar.html';
+                          };
+                          </script>
                     </div>
                 </div>
 
@@ -425,8 +433,8 @@
                     
             <div class="pagination">
                 <a href="#"><i class="fas fa-chevron-left"></i></a>
-                <a href="#" class="pages" id="active">1</a>
-                <a href="#" class="pages">2</a>
+                <a href="/articulos_Eventos/Mequinenza.html" class="pages" id="active">1</a>
+                <a href="/articulos_Eventos/Superstar.html" class="pages">2</a>
                 <a href="#" class="pages">3</a>
                 <a href="#"><i class="fas fa-chevron-right"></i></a>
             </div>
