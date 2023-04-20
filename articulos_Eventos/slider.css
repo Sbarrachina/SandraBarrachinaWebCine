@@ -115,63 +115,14 @@
     gap: 10px;
   }
 }
-
-/* MEDIA QUERRY DE GALERIA DOS */
-
-@media (max-width:750px){
-
-  .gallery-container-3{
-    display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-top: 20px;
-      
+@media only screen and (max-width: 750px) {
+  .modal {
+    display: none !important;
   }
-  .modal-content-3  img{
-    width: 100%;
-    max-width: 800px;
-    padding: 10px;
-    margin-top: 60px;
-
-  }
-
-  
-    
-    .mySlides img{
-        width: 80%;
-        margin-left: 50px;
-        margin-bottom: 100px;
-        margin-top: 60px;
-    }
-
-    .mySlides {
-      display: block;
-      height: 30px;
-  
-      }
-
-      #close-modal {
-        cursor: pointer;
-        margin-right: 100px;
-        font-size: 40px;
-    }
-    .close {
-      position: absolute;
-      top: 60px;
-      right: 10px;
-      
-  
-      }
-      .prev, .next {
-        top: 50%;
-        margin-top: 50px;
-        }
-        
-        .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-        }
 }
+
+
+
 
   /*  */
 
