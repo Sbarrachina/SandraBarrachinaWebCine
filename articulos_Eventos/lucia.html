@@ -218,7 +218,16 @@
                     <img src="/MisImg/EVENTOS/alfons.png" alt="post-4">
                     <div class="blog-title">
                         <h3> Una ciudad llamada olvido </h3>
-                        <button class="btn btn-blog">Presentación</button>
+                        <button class="btn btn-blog" id="leer-alfons">
+                            Presentación &nbsp;
+                          </button>
+                    </button>
+                          
+                    <script>
+                    document.getElementById('leer-alfons').onclick = function() {
+                      window.location.href = '/articulos_Eventos/alfons.html';
+                    };
+                    </script>
                     </div>
                 </div>
 
@@ -324,7 +333,8 @@
 
                     
             <div class="pagination">
-                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                <a href="/articulos_Eventos/arquitecto.html"><i class="fas fa-chevron-left"></i></a>
+
                 <a href="/articulos_Eventos/Mequinenza.html" class="pages" >1</a>
                 <a href="/articulos_Eventos/Superstar.html" class="pages">2</a>
                 <a href="/articulos_Eventos/Monologos.html" class="pages">3</a>
@@ -332,10 +342,10 @@
                 <a href="/articulos_Eventos/arquitecto.html" class="pages" id="active">5</a>
                 <a href="/articulos_Eventos/zahara.html" class="pages">6</a>
                 <a href="/articulos_Eventos/orquesta.html" class="pages">7</a>
-                <a href="/articulos_Eventos/zahara.html" class="pages">8</a>
+                <a href="/articulos_Eventos/alfons.html" class="pages">8</a>
 
                 
-                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                <a href="/articulos_Eventos/zahara.html"><i class="fas fa-chevron-right"></i></a>
             </div>
         </div>
        
