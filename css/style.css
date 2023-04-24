@@ -1054,7 +1054,15 @@ margin-left: 150px;
     margin-right: 60%;
 }
 
-
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .site-content-blog .pagination .pages {
+      padding: .5rem .8rem; /* Reduce el tamaño del botón numérico */
+      border-radius: 1rem;
+      margin: 0 .2rem;
+      font-size: 0.8rem; /* Reduce el tamaño de la fuente */
+    }
+}
 
 /* -------x-------- Site Content --------x-------*/
 
