@@ -1377,9 +1377,136 @@ padding: 5px
 /* -------x-------- Site Content --------x-------*/
 
   
+/* VIDEOBOOKS PAGE */
+
+
+/* --------------- Site title ---------------- */
+main .site-title4{
+    background: url('https://cdn.pixabay.com/photo/2016/09/16/00/19/fall-1673041_1280.jpg');
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+main .site-title4 .site-background{
+    padding-top: 2rem;
+    text-align: center;
+    color: rgb(15, 14, 14);
+    text-transform: uppercase;
+}
+
+main .site-title4 h1, h3{
+    margin: .3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.site-title-c {
+    margin-top: 10%;
+    margin-bottom: 6%;
+    font-size: 70px;
+    color:rgb(235, 14, 14) ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
+}
+
+main .site-title4 .btn{
+    margin: 1.8rem;
+    background: #eee;
+
+}
 
 
 
+main .site-title4 .btn:hover{
+    border: 1px solid rgb(246, 238, 238);
+    color: rgb(20, 18, 18);
+    background: var(--sky);
+}
+
+
+
+@media screen and (max-width: 390px) {
+       
+
+
+    .site-title-c {
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 40px;
+        margin-left: 0px;
+    }
+    main .site-title4 .site-background{
+        padding-top: 4rem;
+        text-align: center;
+        color: rgb(247, 242, 242);
+        text-transform: uppercase;
+    }
+
+}
+
+/* --------x------ Site title --------x------- */
+
+
+
+.box-container{
+    margin-bottom: 100px;
+    padding: 20px;
+    max-width: 90%;
+    width: 90%;
+    margin: 0 auto;
+    
+    }
+    .services .box-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap:1.5rem;
+    }
+    
+    .services .box-container .box{
+      flex:1 1 25rem;
+      border-radius: .5rem;
+      background:#fff;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+      border:.1rem solid rgba(0,0,0,.2);
+      text-align: center;
+      padding:2rem;
+    }
+    
+    .services .box-container .box h3{
+      font-size: 2.5rem;
+      color:#333;
+    }
+    
+    .services .box-container .box p{
+      font-size: 18px;
+      color:#666;
+      padding:.5rem 0;
+      line-height: 2;
+    }
+    
+    /*  */
+    
+    .heading-services{
+      text-align: center;
+      color:#333;
+      font-size: 4rem;
+      padding-bottom: 3rem;
+    }
+    
+    .heading-services span{
+      color:var(--red);
+      background:var(--light-red);
+      border-radius: .5rem;
+      padding:.2rem 1.5rem;
+    }
+  
 
 
 
