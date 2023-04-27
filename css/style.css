@@ -308,6 +308,7 @@ i {
     
     .video i:hover {
         opacity: 1;
+
     }
     
     @media only screen and (max-width: 1200px) {
@@ -739,6 +740,8 @@ opacity: 1;
 
 .galeria i:hover {
     opacity: 1;
+    color: red;
+
 }
 
 
@@ -1510,9 +1513,78 @@ main .site-title4 .btn:hover{
 
 
 
+/* guiones portadas */
+.guiones-text{
+    text-align: center;
+}
+.portadas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr); /* Cambiar a 1fr para ocupar el espacio disponible */
+    grid-gap: 5px;
+    transition: filter 0.3s ease; /* Agrega una transición para suavizar el efecto */
+    justify-items: center; /* Agrega para centrar horizontalmente las imágenes */
+    margin-left: 20px; /* Agrega para mover el margen izquierdo */
+    padding: 80px;
+    margin-bottom: -100px;
+}
+
+.portadas a {
+    display: block;
+    position: relative;
+}
+
+.portadas img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.portadas a:hover img {
+    transform: scale(1.1); /* Agrega escala para agrandar la imagen */
+}
 
 
 
+.portadas a:hover::before {
+    opacity: 1;
+}
+
+@media (max-width: 750px) {
+    .portadas {
+      grid-template-columns: 1fr;
+      margin-left: 0;
+      justify-items: center;
+      margin-bottom: -100px;
+    }
+    .portadas a {
+      width: 100%;
+      margin: 0 auto 10px;
+    }
+    .portadas img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .portadas a:hover img {
+      transform: scale(1.1);
+    }
+    .portadas a::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: opacity 0.3s ease;
+    }
+    .portadas a:hover::before {
+      opacity: 1;
+    }
+  }
+  
 
 
 
