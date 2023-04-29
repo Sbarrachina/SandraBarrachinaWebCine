@@ -1587,11 +1587,74 @@ main .site-title4 .btn:hover{
   
 
 
+/* Escritora Page */
+
+.slider-portadas{
+    display: flex;
+    width: 100%;
+    height: 630px;
+    background-image: linear-gradient(to bottom, transparent, black);
+
+}
+
+.slider-portadas img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 5s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 
+}
+
+.slider-portadas img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+
+}
 
 
+@media screen and (max-width: 768px) {
+  .slider-portadas {
+    height: 400px;
+  }
+  
+  .slider-portadas img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 5s ease;
+  }
+  
+  .slider-portadas img:hover {
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+}
 
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    .slider-portadas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 10px;
+      height: auto;
+    }
+    
+    .slider-portadas img {
+      width: 100%;
+      height: 100%;
+      max-height: none;
+    }
+  }
 
 
 
