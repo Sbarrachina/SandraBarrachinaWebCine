@@ -1592,7 +1592,7 @@ main .site-title4 .btn:hover{
 main .site-title5{
     background: url('https://wallpaperaccess.com/full/124383.jpg');
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     margin-top: 0;
@@ -1671,6 +1671,8 @@ main .site-title5 .btn:hover{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
+    text-transform: uppercase;
+    width: 95%;
 }
 
 
@@ -1835,9 +1837,124 @@ main .site-title5 .btn:hover{
       }
   }
 
+  /* post de blooger portadas slider a página */
+ 
+.slider-container{
+    position: relative;
+    height: 400px;
+    margin-top: 50px;
+    width: 100vw;
+  }
+  .slider-width{
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    left: 0;
+    top: 0;
+    transition: 0.4s ease-in-out;
+  }
+  .item{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 400px;
+    margin: 0 9px;
+    color: #fff;
+    text-align: center;
+   
+  }
+  
+  .uno{
+    background-image: url(../MisImg/portadas-blog/relato15.png);
+    background-size: cover;
+  }
+  
+  .dos{ 
+    background-image: url(../MisImg/portadas-blog/relato16.png);
+    background-size: cover;
+  }
+  
+  .tres{ 
+    background-image: url(../MisImg/portadas-blog/relato2.png);
+    background-size: cover;
+  }
+  
+  .cuatro{ 
+    background-image: url(../MisImg/portadas-blog/relato3.png);
+    background-size: cover;
+  }
+  
+  .cinco{ 
+    background-image: url(../MisImg/portadas-blog/relato4.png);
+    background-size: cover;
+  }
+  
+  .seis{ background-image: url(../MisImg/portadas-blog/relato8.png);
+    background-size: cover;}
+  
+  .siete{ 
+    background-image: url(../MisImg/portadas-blog/relato5.png);
+    background-size: cover;}
   
   
+  
+  #prev-btn,#next-btn{
+    background: #eee;
+    border: none;
+    outline: none;
+    color: #100d0d;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 8px 40px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+  }
+  
+  #prev-btn:hover,#next-btn:hover{
+    background: var(--sky);
+    color: black;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .slider-width{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+      }
+      #prev-btn,#next-btn{
+    display: none;
+      }
+      
+}
 
+
+.container-escribir{
+    margin-top: -100px;
+}
+#siente{
+    text-transform: uppercase;
+    margin:0 auto;
+    margin-top: -100px;
+    width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+    .container-escribir{
+        margin-top: 100px;
+    }
+    #siente{
+        text-transform: uppercase;
+        margin:0 auto;
+        margin-top: 10px;
+    }
+
+}
 /* CONTACTO PAGE */
 
 

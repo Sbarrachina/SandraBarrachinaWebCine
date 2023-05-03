@@ -73,3 +73,27 @@ function siguienteLibro() {
   }
   mostrarLibroActual();
 }
+
+// post blog escritora 
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then(response => response.json())
+  .then(data => {
+    // procesa los datos de las publicaciones
+  })
+  .catch(error => console.error(error));
+
+  const publicacionesDiv = document.getElementById('publicaciones');
+
+data.forEach(publicacion => {
+  const publicacionHTML = `
+    <div>
+      <h2>${publicacion.title}</h2>
+      <p>${publicacion.body}</p>
+    </div>
+  `;
+  publicacionesDiv.innerHTML += publicacionHTML;
+});
+
+
+
