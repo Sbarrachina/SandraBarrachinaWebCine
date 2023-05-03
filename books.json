@@ -1,0 +1,33 @@
+{
+  "libros": [
+    {
+      "id": "portada_relatos",
+      "titulo": "Un legado a los que vendrán detrás de mí",
+      "descripcion": "Nuestros sueños nos llevan a lugares a los que nunca llegaremos. Nos abren las puertas de otros mundos.Sin duda, escribir sobre el futuro que nos puede venir da mucho miedo, sobretodo que pueda hacerse realidad.No hay mayor castigo que la luna se enamore de un humano eterno. La luna está llena de miradas que se perdieron buscando repuestas.¿Qué pasaría si un extraterrestre visita a una niña que no tiene miedo a nada? Realizar el gran viaje, dónde no sabes si podrás volver a lo que conociste. Tu mundo, tu vida. Dejar todo atrás. Pequeñas historias que rondan por mi cabeza. Por fin encuentran su lugar. Escribir cada frase como si fuera un latido de mi corazón. Disfrutando del viaje y con ganas de más.",
+      "imagen": "https://m.media-amazon.com/images/I/51QfcgO2zcL.jpg",
+      "anio": 2020
+    },
+    {
+      "id": "portada_kasicasting",
+      "titulo": "Kasi Casting",
+      "descripcion": "Una novela de suspenso que te mantendrá al borde de tu asiento hasta el final.",
+      "imagen": "/MisImg/portadas libro/portada_kasicasting.jpg",
+      "anio": 2018
+    },
+    {
+      "id": "portada_ebook_julia",
+      "titulo": "Julia",
+      "descripcion": "Una novela romántica que te hará creer en el amor verdadero.",
+      "imagen": "/MisImg/portadas libro/portada ebook julia .jpg",
+      "anio": 2019
+    },
+    {
+      "id": "portada_ebook_relatos2",
+      "titulo": "Relatos 2",
+      "descripcion": "Una segunda colección de relatos cortos que te sorprenderá.",
+      "imagen": "/MisImg/portadas libro/portada_ebook_relatos2.png",
+      "anio": 2021
+    }
+  ]
+}
+

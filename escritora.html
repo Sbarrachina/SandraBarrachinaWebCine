@@ -45,7 +45,7 @@
         
         </li>
         <li class="nav-item ">
-            <a href="/trabajos.html">ESCRITORA</a>
+            <a href="/escritora.html">ESCRITORA</a>
         </li>
         <li class="nav-item ">
             <a href="/trabajos.html"> DISEÑO WEB</a>
@@ -63,25 +63,75 @@
 
     <!------------------------ Site Title ---------------------->
 
-    <section class="site-title4  ">
+    <section class="site-title5  ">
       <div class="site-background" data-aos="fade-up" data-aos-delay="100">
-          <h1>La Edición: El arte de contar historias visuales </h1>
+          <h1>Los Libros abren la ventana de la imaginación </h1>
 
-          <h3 class="site-title-c"> VIDEOBOOKS ACTORES</h3>
-          <button class="btn">CONTACTA</button>
+          <h3 class="site-title-e"> Escritora</h3>
       </div>
   </section>
+
+  <p class="para-e">
+
+    Todo comenzó por crear un blog, donde poder darme a conocer. Luego me adentré en el mundo de los relatos. Contando pequeñas historias llenas de imaginación y dando mi toque personal. Con la intención de seguir creciendo como escritora. Disfrutar haciéndolo y con retos cada vez mayores.
+
+  </p> 
 
         
       <!-- Slider portadas libros -->
       <section class="slider-portadas">
-      <img src="/MisImg/portadas libro/portada_relatos.jpg" alt="">
-      <img src="/MisImg/portadas libro/portada_kasicasting.jpg" alt="">
-      <img src="/MisImg/portadas libro/portada ebook julia .jpg" alt="">
-      <img src="/MisImg/portadas libro/portada_ebook_relatos2.png" alt="">
+        <img id="portada_relatos" class="portada" src="/MisImg/portadas libro/portada_relatos.jpg" alt="">
+        <img id="portada_kasicasting" class="portada" src="/MisImg/portadas libro/portada_kasicasting.jpg" alt="">
+        <img id="portada_ebook_julia" class="portada" src="/MisImg/portadas libro//portada ebook julia .jpg" alt="">
+        <img id="portada_ebook_relatos2" class="portada" src="/MisImg/portadas libro/portada_ebook_relatos2.png" alt="">
+      </section>
 
 
-    </section>
+      
+
+
+      <div id="detalle-libro">
+        <button id="cerrar-detalle" onclick="cerrarDetalle()">Cerrar</button>
+        <button id="anterior" onclick="anteriorLibro()"><i class="fas fa-arrow-left"></i></button>
+      <button id="siguiente" onclick="siguienteLibro()"><i class="fas fa-arrow-right"></i></button>
+
+        <h2 id="titulo"></h2>
+        <div class="descripcion-container">
+        <p id="descripcion"></p>
+         </div>
+        <img id="imagen" src="" alt="">
+        <p id="anio"></p>
+      </div>
+      
+      <script>
+        fetch("/books.json")
+          .then(response => response.json())
+          .then(data => {
+            const libros = data.libros;
+      
+            // Agregar evento de click a cada imagen del slider
+
+libros.forEach(libro => {
+const imagen = document.getElementById(libro.id);
+imagen.addEventListener("click", () => {
+
+// Mostrar los datos del libro en el detalle
+
+document.getElementById("titulo").textContent = libro.titulo;
+document.getElementById("descripcion").textContent = libro.descripcion;
+document.getElementById("imagen").src = libro.imagen;
+
+      // Mostrar el detalle del libro
+      document.getElementById("detalle-libro").style.display = "block";
+    });
+  });
+});
+
+
+</script>
+
+
+    
 
     
     
@@ -114,6 +164,9 @@
     <script type="text/javascript" src="./jquery/jquery-3.6.0.min.js"></script>
 
     <script type="text/javascript" src="./venobox/venobox.min.js"></script>
+
+
+
     <script>
       $(document).ready(function () {
         $(".venobox").venobox({
