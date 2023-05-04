@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/videobooks.css">
 
+    <!-- links carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
     <link
     rel="stylesheet"
     href="./venobox/venobox.css"
@@ -74,9 +78,7 @@
 
           </h3>
 
-      <div class="d-flex flex-row">
-        <a href="/Contacto.html" target="_blank">  <input type="button" value="CONTACTA" class="btn site-btn2 px-4 py-3 mr-4 btn-light" id="boton"> </a>
-     </div>
+      
       </div>
 
   </section>
@@ -162,21 +164,49 @@ de que estás tan emocionado, que no puedes parar de escribir.
 </section>
 
 
-<div class="slider-container" item-display-d="4" item-display-t="3" item-display-m="1">
-  <div class="slider-width">
-      <div class="item uno"></div>
-      <div class="item dos"></div>
-      <div class="item tres"></div>
-      <div class="item cuatro"></div>
-      <div class="item cinco"></div>
-      <div class="item seis"></div>
-      <div class="item siete"></div>
-     
-  </div>
-</div>
-<button id="prev-btn" type="button" class="slider-prev btn">Prev</button>
-<button id="next-btn" type="button" class="slider-next btn">Next</button>
+<!-- slider uno portadas blog -->
 
+		
+<div class="carousel">
+  <div class="carousel__contenedor">
+    <button aria-label="Anterior" class="carousel__anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="carousel__lista">
+      <div class="carousel__elemento">
+        <img src="/MisImg/portadas-blog/relato5.png" alt="">
+      </div>
+      <div class="carousel__elemento">
+        <img src="/MisImg/portadas-blog/relato16.png" alt="">
+      </div>
+      <div class="carousel__elemento">
+        <img src="/MisImg/portadas-blog/relato15.png" alt="">
+      </div>
+      <div class="carousel__elemento">
+        <img src="img/categoria2/14.png" alt="">
+      </div>
+
+      <div class="carousel__elemento">
+        <img src="img/categoria2/20.png" alt="">
+      </div>
+      <div class="carousel__elemento">
+        <img src="img/categoria2/22.png" alt="Harmony Tower">
+      </div>
+     
+      <div class="carousel__elemento">
+        <img src="img/categoria2/23.png" alt="Harmony Tower">
+      </div>
+    </div>
+   
+    <button aria-label="Siguiente" class="carousel__siguiente">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <div role="tablist" class="carousel__indicadores"></div>
+</div>
+</div>
 
 
 
@@ -272,9 +302,9 @@ de que estás tan emocionado, que no puedes parar de escribir.
             </div>
 
             <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2020/03/diaria-de-cuarentena-respirando-y-sin.html" target="_blank">
+              <a href="https://sandrabarrachina.blogspot.com/2020/07/fantasma-muerte-y-mundos-virtuales.html" target="_blank">
 
-              <img src="/img/categoria3/10.png" alt="image 3">
+              <img src="/img/categoria1/2.png" alt="image 3">
               </a>
             </div>
   
@@ -465,6 +495,10 @@ de que estás tan emocionado, que no puedes parar de escribir.
     <script type="text/javascript" src="./venobox/venobox.min.js"></script>
 
 <script src="/slider.js"></script>
+
+<!-- carousel links -->
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
     <script>
       $(document).ready(function () {
