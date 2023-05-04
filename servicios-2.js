@@ -52,6 +52,8 @@ function mostrarLibroActual() {
   document.getElementById("descripcion").textContent = libroActual.descripcion;
   document.getElementById("imagen").src = libroActual.imagen;
   document.getElementById("anio").textContent = libroActual.anio;
+  document.getElementById("enlace").textContent = libroActual.enlace;
+
 }
 
 function cerrarDetalle() {

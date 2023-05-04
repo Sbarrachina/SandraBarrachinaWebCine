@@ -57,3 +57,30 @@ document.getElementById("prev-btn").addEventListener("click", function() {
   }
   slider.style.left = count + "px";
 });
+
+
+// galeria  filtros blog
+
+var filterButtons = document.querySelectorAll(".filter");
+var imgBoxes = document.querySelectorAll(".img-box-3");
+
+// Agregar un evento de click a cada botón de filtro
+filterButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    var category = button.getAttribute("data-category");
+    filterImages(category);
+  });
+});
+
+function filterImages(category) {
+  imgBoxes.forEach(function(imgBox) {
+    if (imgBox.getAttribute("data-category") === category || category === "all") {
+      imgBox.style.display = "block";
+    } else {
+      imgBox.style.display = "none";
+    }
+  });
+}
+
+
+
