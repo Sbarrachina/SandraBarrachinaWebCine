@@ -1446,7 +1446,8 @@ main .site-title4 .btn:hover{
         margin-left: 0px;
     }
     main .site-title4 .site-background{
-        padding-top: 4rem;
+        padding-top: 2rem;
+        margin-top: -10px;
         text-align: center;
         color: rgb(17, 15, 15);
         text-transform: uppercase;
