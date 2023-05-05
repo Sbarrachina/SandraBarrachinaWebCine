@@ -2107,7 +2107,7 @@ iframe {
     gap: 1.5rem;
     padding-bottom: 2rem;
 }
-.grupo2 {
+.grupo2{
     margin: 0 auto;
 }
 
@@ -2128,6 +2128,8 @@ iframe {
         background-position: center;
         background-repeat: no-repeat;   
     }
+
+    
   }
   
 /* CONTACTO PAGE */
