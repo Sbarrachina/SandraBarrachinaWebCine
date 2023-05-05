@@ -13,12 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 
-    <link
-    rel="stylesheet"
-    href="./venobox/venobox.css"
-    type="text/css"
-    media="screen"
-  />
+   
 </head>
 <body>
    <header>
@@ -100,8 +95,6 @@
 
 
       
-
-
       <div id="detalle-libro">
         <button id="cerrar-detalle" onclick="cerrarDetalle()">Cerrar</button>
         <button id="anterior" onclick="anteriorLibro()"><i class="fas fa-arrow-left"></i></button>
@@ -112,8 +105,9 @@
         <p id="descripcion"></p>
          </div>
         <img id="imagen" src="" alt="">
+        <button id="botonDetalle" onclick="irAmazon()" >Ir a Amazon</button>
+
         <p id="anio"></p>
-        <button id="botonDetalle">Ver detalle</button>
 
       </div>
       
@@ -136,15 +130,26 @@ document.getElementById("descripcion").textContent = libro.descripcion;
 document.getElementById("imagen").src = libro.imagen;
 
 
-
-      // Mostrar el detalle del libro
+        // Mostrar el detalle del libro
       document.getElementById("detalle-libro").style.display = "block";
     });
   });
 });
 
+// botón de ir a Amazon se dirige a mi perfil personal
+
+function irAmazon() {
+  const titulo = document.getElementById("titulo").textContent;
+  const url = "https://www.amazon.es/Sra-SANDRA-BARRACHINA-ARRIBAS/e/B07R7PMKKQ/ref=aufs_dp_fta_dsk" + encodeURIComponent(titulo);
+  window.open(url, "_blank");
+}
+
+
 
 </script>
+
+
+
 
 
 <!-- blog post  -->
@@ -232,21 +237,13 @@ de que estás tan emocionado, que no puedes parar de escribir.
         <img src="/img/categoria2/1.png" alt="image 2">
       </a>
     </div>
-    <div class="img-box-3" data-category="category3">
-      <a href="https://sandrabarrachina.blogspot.com/2020/03/menuda-semana.html" target="_blank">
-        <img src="/img/categoria3/11.png" alt="image 3">
-      </a>
-    </div>
+   
     <div class="img-box-3" data-category="category1">
       <a href="https://sandrabarrachina.blogspot.com/2022/10/critica-los-renglones-perdidos-de-dios.html"target="_blank">
         <img src="/img/categoria1/69.png" alt="image 4">
       </a>
     </div>
-    <div class="img-box-3" data-category="category3">
-      <a href="https://sandrabarrachina.blogspot.com/2020/03/2-diario-de-cuarentena-rodaje-en-cine.html" target="_blank">
-        <img src="/img/categoria3/12.png" alt="image 5">
-      </a>
-    </div>
+    
     
 
         <!--  -->
@@ -275,12 +272,7 @@ de que estás tan emocionado, que no puedes parar de escribir.
               </a>
             </div>
 
-            <div class="img-box-3" data-category="category3">
-              <a href="https://sandrabarrachina.blogspot.com/2020/03/3-diario-de-cuarentena-el.html" target="_blank">
-
-              <img src="/img/categoria3/13.png" alt="image 3">
-              </a>
-            </div>
+         
   
 
   
@@ -310,12 +302,6 @@ de que estás tan emocionado, que no puedes parar de escribir.
   
   
   
-            <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2019/11/37-locura-olores-y-terminators.html" target="_blank">
-
-              <img src="/img/categoria1/52.png" alt="image 1">
-              </a>
-            </div>
 
             <div class="img-box-3" data-category="category2">
               <a href="https://sandrabarrachina.blogspot.com/2021/04/vidente-digame-sin-tener-idea.html" target="_blank">
@@ -324,23 +310,12 @@ de que estás tan emocionado, que no puedes parar de escribir.
               </a>
             </div>
             
-            <div class="img-box-3" data-category="category3">
-              <a href="https://sandrabarrachina.blogspot.com/2020/03/5-diario-de-cuarentena-y-los-musicales.html" target="_blank">
-
-              <img src="/img/categoria3/8.png" alt="image 3">
-              </a>
-            </div>
+          
   
   <!--  -->
 
 
-            <div class="img-box-3" data-category="category3">
-              <a href="https://sandrabarrachina.blogspot.com/2020/04/6-diario-de-cuarentena-un-poco-de-prosa.html" target="_blank">
 
-              <img src="/img/categoria3/7.png" alt="image 1">
-              </a>
-
-            </div>
 
             <div class="img-box-3" data-category="category2">
               <a href="https://sandrabarrachina.blogspot.com/2022/09/el-carrito-espacial.html" target="_blank">
@@ -358,12 +333,7 @@ de que estás tan emocionado, que no puedes parar de escribir.
             </div>
   
   
-            <div class="img-box-3" data-category="category3">
-              <a href="https://sandrabarrachina.blogspot.com/2020/04/7-diario-de-cuarentena-maldito.html" target="_blank">
-
-              <img src="/img/categoria3/6.png" alt="image 1">
-              </a>
-            </div>
+            
 
             <div class="img-box-3" data-category="category2">
               <a href="https://sandrabarrachina.blogspot.com/2020/06/ensename-la-curvatura.html" target="_blank">
@@ -444,18 +414,83 @@ de que estás tan emocionado, que no puedes parar de escribir.
               <img src="/img/categoria2/10.png" alt="image 2">
                 </a>
             </div>
-          
-  
-            <div class="img-box-3" data-category="category1">
-              <a href="https://sandrabarrachina.blogspot.com/2019/06/29-jovenes-dimensiones-y-chernobyl.html" target="_blank">
 
-              <img src="/img/categoria1/29.png" alt="image 2">
+            <div class="img-box-3" data-category="category3">
+              <a href="http://sandrabarrachina.blogspot.com/2021/07/5-la-mirona-televisiva-bailes.html" target="_blank">
+
+              <img src="/img/categoria3/5.png" alt="image 1">
               </a>
             </div>
-            
+
+            <div class="img-box-3" data-category="category3">
+              <a href="http://sandrabarrachina.blogspot.com/2022/03/6-la-mirona-televisiva-nos-vamos-al.html" target="_blank">
+
+              <img src="/img/categoria3/68.png" alt="image 1">
+              </a>
+            </div>
+
+
+          
+            <div class="img-box-3" data-category="category1">
+              <a href="https://sandrabarrachina.blogspot.com/2020/08/chicas-malas-y-cambios-perspectiva.html" target="_blank">
+
+              <img src="/img/categoria1/1.png" alt="image 3">
+              </a>
+            </div>
+  
+         
   
       </div>
 
+
+      <!-- Sección galeria de videos -->
+
+      <div class="container-videos">
+        <div class="conten">
+            <h1><i class="fa-brands fa-youtube "></i> MIS VIDEOS</h1>
+            <p>En esta sección encontrarás todos lo videos relacionados con mi faceta de escritora.
+              Book trailers de mis libros como el resto material de promoción. 
+            </p>
+        </div>
+        
+        <div class="grupo">
+            <h1 class="title1"><i class="fa fa-film"></i>
+
+
+              Book Trailers</h1>
+            <div class="contvideos">   
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/nz_Y0uankic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>                                         
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/kKI1Zej-kdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/E0umhGIgWXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>                
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/4y5oetNMOOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
+                
+            </div>
+
+        </div>
+        <div class="grupo2">
+            <h1 class="title1"><i class="fa fa-book"></i>
+              Presentaciones</h1>
+            <div class="contvideos">            
+                
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xsKDhYf4swQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/PyWhE2B_zyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
@@ -500,16 +535,6 @@ de que estás tan emocionado, que no puedes parar de escribir.
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
-    <script>
-      $(document).ready(function () {
-        $(".venobox").venobox({
-          closeColor: "#f4f4f4",
-          spinColor: "#f4f4f4",
-          arrowsColor: "#f4f4f4",
-          closeBackground: "#17191D",
-          overlayColor: "rgba(23,25,29,0.8)",
-        });
-      });
-    </script>
+   
 </body>
 </html>

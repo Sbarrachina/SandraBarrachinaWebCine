@@ -1746,6 +1746,9 @@ main .site-title5 .btn:hover{
 
 
 /* data libros */
+#titulo{
+    text-transform: uppercase;
+}
 #detalle-libro {
     display: none;
     background-color: #fff;
@@ -1775,7 +1778,7 @@ main .site-title5 .btn:hover{
   }
   
   #imagen{
-    width: 30%;
+    width: 25%;
     margin: 90px;
     margin-left: 280px;
     margin-top: 20px;
@@ -1801,10 +1804,21 @@ main .site-title5 .btn:hover{
   .descripcion-container {
     max-height: 300px;
     overflow: auto;
+    margin-top: -20px;
   }
   
+ 
 
-  #cerrar-detalle:hover{
+ #cerrar-detalle{
+ padding: 20px;
+ margin: 10px;
+ text-transform: uppercase;   
+
+}
+
+
+
+#cerrar-detalle:hover{
     background: var(--sky);
 
 }
@@ -1818,13 +1832,22 @@ main .site-title5 .btn:hover{
 
 }
 
+#botonDetalle{
+    padding:10px 10px;
+    border-radius: 10%;
+    text-transform: uppercase;
+}
+#botonDetalle:hover{
+    background: var(--sky);
+
+}
 
   @media screen and (max-width: 768px) {
     #imagen {
-      width: 50%;
+      width: 40%;
       margin: 50px auto;
-      margin-left: 100px;
-      margin-top: 20px;
+      margin-left: 30px;
+      margin-top: 8px;
     }
     #detalle-libro {
         display: none;
@@ -1834,6 +1857,14 @@ main .site-title5 .btn:hover{
        
     
       }
+      #botonDetalle{
+        padding:8px 5px;
+        border-radius: 10%;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-left: 30px;
+
+    }
   }
 
   /* post de blooger portadas slider a página */
@@ -1992,13 +2023,111 @@ main .site-title5 .btn:hover{
             
         }
       
-      
+        
+          .filter {
+            padding: 8px 8px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+          }
+         
 
     }
 
 
 
+/* Galeria de videos Escritora */
 
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.container-videos {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin-top: 100px;
+
+}
+.conten {
+    padding: 6rem 9% ;
+    height: 800px;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-film-festival-berlin-film-festival-grammy-golden-plum-image_23357.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.conten h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    color: #d8d8d8;
+
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
+
+}
+.conten p {
+    max-width: 45rem;
+    color: #d8d8d8;
+    font-size: 1rem;
+    letter-spacing: .04rem;
+    font-weight: 300;    
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+
+
+.title1 {
+    padding: 1rem 9% ;
+    color: rgb(235, 14, 14);
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+    
+.video{ 
+    border: 0.12rem solid #d8d8d8;
+}
+.contvideos {
+    padding: 0 9% ;
+    margin: auto;    
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+.grupo2 {
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .contvideos {
+      padding: 0 3%;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+    .conten {
+        padding: 6rem 9% ;
+        height: 500px;
+        background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-film-festival-berlin-film-festival-grammy-golden-plum-image_23357.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;   
+    }
+  }
+  
 /* CONTACTO PAGE */
 
 
