@@ -48,7 +48,7 @@ html{
 
 
 .hero {
-    background-image: url("/actores/carole_Lombard/img/image-hero-carole_mov.png");
+    background-image: url("../img/image-hero-carole_mov.png");
     background-size: cover;
     min-height: 80vh;
     padding: 2rem 1rem;
@@ -298,7 +298,7 @@ main {
 
 @media screen and (min-width: 800px) {
     .hero {
-        background-image: url("/actores/carole_Lombard/img/image-hero-carole.png");
+        background-image: url("../img/image-hero-carole.png");
         padding: 2rem 6rem ;
         min-height: 75vh;
     }
