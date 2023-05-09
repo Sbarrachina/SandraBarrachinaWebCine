@@ -2235,7 +2235,7 @@ form{
     padding-top: 50px;
 }
 .campus-col-web{
-    flex-basis: 20%;
+    flex-basis: 25%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -2277,10 +2277,127 @@ opacity: 1;
 
 
 
+/*  */
+
+/* --------------- Site title ---------------- */
+main .site-title-web{
+    background: url('https://www.pixelibyte.com/wp-content/uploads/2017/07/gif-pag-diseno-web_01-1.gif');
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+main .site-title-web .site-background{
+    padding-top: 2rem;
+    text-align: center;
+    color: rgb(15, 14, 14);
+    text-transform: uppercase;
+}
+
+main .site-title-web h1, h3{
+    margin: .3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.site-title-w {
+    margin-top: -3%;
+    margin-bottom: 6%;
+    font-size: 80px;
+    color:rgb(235, 14, 14) ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.site-title-w2{
+    margin-top: 5%;
+    margin-bottom: 6%;
+    font-size: 80px;
+    color:rgb(235, 14, 14) ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
+}
+
+main .site-title-web .btn{
+    margin: 1.8rem;
+    background: #eee;
+
+}
 
 
 
+main .site-title-w .btn:hover{
+    border: 1px solid rgb(246, 238, 238);
+    color: rgb(20, 18, 18);
+    background: var(--sky);
+}
 
 
+.web-text p{
+    line-height: 1.5; /* ajusta el valor para conseguir el entrelineado deseado */
+  font-size: 22px; /* ajusta el tamaño de la fuente según tus preferencias */
+}
 
 
+@media screen and (max-width: 390px) {
+       
+
+
+    .site-title-w {
+        margin-top: 30%;
+        margin-bottom: 6%;
+        font-size: 40px;
+        margin-left: 0px;
+    }
+    main .site-titlew .site-background{
+        padding-top: 2rem;
+        margin-top: -10px;
+        text-align: center;
+        color: rgb(17, 15, 15);
+        text-transform: uppercase;
+    }
+
+}
+
+/* cards templates */
+
+.box-container-w {
+    margin-bottom: 100px;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .box-container-w .box-w {
+    flex: 1 1 25%;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .box-container-w .box-w h3 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .box-container .box-w p {
+    font-size: 18px;
+    color: #666;
+    padding: .5rem 0;
+    line-height: 2;
+  }
+  
