@@ -471,48 +471,7 @@ i {
         }
     }
     
-    /* SERVICIOS IMAGENES GRID */
-    .section-4 {
-        margin-top: 8%;
     
-    
-    }
-    
-    .section-4 a {
-        color: rgb(216, 15, 15);
-        font-size: 40px;
-        text-decoration: none;
-    }
-    
-    .section-4 .para-1 {
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        margin-top: 7%;
-        font-size: 23px;
-    }
-    
-    #categorias {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr); /* Cambiar a 1fr para ocupar el espacio disponible */
-        grid-gap: 10px;
-        transition: filter 0.3s ease; /* Agrega una transición para suavizar el efecto */
-
-        
-    }
-
-  #categorias img:hover{
-    filter:grayscale(7)
-
-      }
-      
-    
-    @media screen and (max-width: 700px) {
-        
-        .section-4 .col-md-7 img{
-            width: 100%;
-        }
-    }
     
     /* FOOTER  */
     
@@ -553,6 +512,12 @@ i {
         }
     
     }
+
+
+  
+
+
+
 
 
 /*  POSTPRODUCCIÓN PAGE */
@@ -2259,9 +2224,55 @@ form{
 }
 
 
+/* PAGINA DISEÑO WEB  */
 
 
 
+.web-content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col-web{
+    flex-basis: 20%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col-web img{
+    width: 100%;
+    display: block;
+}
+.layer-web{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer-web:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer-web h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer-web:hover h3{
+bottom: 49%;
+opacity: 1;
+}
 
 
 
