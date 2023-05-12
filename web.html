@@ -205,25 +205,29 @@
 
  
 
-  <div class="box-container-w">
-
-   
-
-      
-
-      
-
-
-  </div>
+  
 
 </section>
 
 
 <!-- formulario -->
 
+<section class="img_call">
+  <div class="img-vertical">
+    <img src="/img/cine copy.png" alt="">
+    <img src="/img/cine copy.png" alt="">
+    <img src="/img/cine copy.png" alt="">
+
+
+
+
+  </div>
+
+
+
 <form id="formulario-contacto" action="https://formspree.io/f/mpzbokrb" method="post">
 	  
-    <h2>PEDIR PRESUPUESTO</h2>
+    <h2 class="upercase">¿Qué información necesitamos para crear tu web</h2>
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" required>
   
@@ -233,47 +237,88 @@
     <label for="telefono">Teléfono:</label>
     <input type="tel" id="telefono" name="telefono" required>
 
-    <label for="tipo-vivienda">Eres :</label>
-    <select id="tipo-vivienda" name="tipo-vivienda" required>
+    <!--  -->
+
+    <label for="pregunta1">¿Dispones de los siguientes materiales? (marca todas las que correspondan):</label>
+    <div class="checkbox-grid">
+      <div>
+        <input type="checkbox" id="videobook" name="pregunta1[]" value="Videobook">
+        <label for="videobook">Videobook</label>
+      </div>
+      <div>
+        <input type="checkbox" id="fotografias" name="pregunta1[]" value="Fotografías">
+        <label for="fotografias">Fotografías</label>
+      </div>
+      <div>
+        <input type="checkbox" id="videos-previos" name="pregunta1[]" value="Videos de trabajos previos">
+        <label for="videos-previos">Videos de trabajos previos</label>
+      </div>
+      <div>
+        <input type="checkbox" id="enlaces-previos" name="pregunta1[]" value="Enlaces a trabajos previos">
+        <label for="enlaces-previos">Enlaces a trabajos previos</label>
+      </div>
+      <div>
+        <input type="checkbox" id="texto" name="pregunta1[]" value="Texto">
+        <label for="texto">Texto</label>
+      </div>
+    </div>
+    
+    <label for="pregunta2">¿Tienes presencia en redes sociales? (marca todas las que correspondan):</label>
+    <div class="checkbox-grid">
+      <div>
+        <input type="checkbox" id="instagram" name="pregunta2[]" value="Instagram">
+        <label for="instagram">Instagram</label>
+      </div>
+      <div>
+        <input type="checkbox" id="facebook" name="pregunta2[]" value="Facebook">
+        <label for="facebook">Facebook</label>
+      </div>
+      <div>
+        <input type="checkbox" id="linkedin" name="pregunta2[]" value="Linkedin">
+        <label for="linkedin">Linkedin</label>
+      </div>
+      <div>
+        <input type="checkbox" id="twitter" name="pregunta2[]" value="Twitter">
+        <label for="twitter">Twitter</label>
+      </div>
+      <div>
+        <input type="checkbox" id="youtube" name="pregunta2[]" value="Youtube">
+        <label for="youtube">Youtube</label>
+      </div>
+    </div>
+    
+    <label for="otraEspecifica">Otra (específica):</label>
+    <input type="text" id="otraEspecifica" name="otraEspecifica">
+
+    <label for="tipo-plantilla">¿Qué tipo de plantilla te gustaría utilizar para tu sitio web? (elige una opción): :</label>
+    <select id="tipo-plantilla" name="tipo-plantilla" required>
         <option value="">Seleccione una opción</option>
-        <option value="piso">Actor | Actriz</option>
-        <option value="casa">Director | Directora</option>
-        <option value="loft">Loft</option>
+        <option value="piso">Web Carol</option>
+        <option value="casa">Web Cary</option>
+        <option value="loft">Web John</option>
+        <option value="loft">Web Emma</option>
+
       </select>
   
-    <label for="tipo-reforma">Tipo de Reforma:</label>
-    <select id="tipo-reforma" name="tipo-reforma" required>
+    <label for="tipo-videobook">¿Estás interesado en que me encargue de crear tu videobook y lo incluya en tu sitio web? </label>
+    <select id="tipo-viceobook" name="tipo-videobook" required>
       <option value="">Selecciona una opción</option>
-      <option value="cocina">Cocina</option>
-      <option value="baño">Baño</option>
-      <option value="dormitorios">Dormitorios</option>
-      <option value="otros">Otros</option>
+      <option value="si">Si</option>
+      <option value="no">No</option>
+      
     </select>
 
-    <label for="presupuesto">Presupuesto Estimado:</label>
-    <input type="number" id="presupuesto" name="presupuesto" required>
     
+    <label for="pregunta2">¡Gracias por completar el formulario! Te contactaré a la brevedad para continuar con el proceso.</label>
 
-    <label for="fecha">Fecha deseada para comenzar la reforma:</label>
+  
+
+    <label for="fecha">Fecha deseada para crear la web:</label>
     <input type="date" id="fecha" name="fecha" required>
    
-<!-- preguntas  -->
-
-<label for="pregunta1">¿Está interesado en recibir promociones?</label><br>
-  <input type="checkbox" id="pregunta1" name="pregunta1" value="si">
-  <label for="pregunta1">Sí</label><br>
-  <input type="checkbox" id="pregunta1" name="pregunta1" value="no">
-  <label for="pregunta1">No</label><br>
-  
-  <label for="pregunta2">¿Desea recibir nuestro boletín de noticias?</label><br>
-  <input type="checkbox" id="pregunta2" name="pregunta2" value="si">
-  <label for="pregunta2">Sí</label><br>
-  <input type="checkbox" id="pregunta2" name="pregunta2" value="no">
-  <label for="pregunta2">No</label><br>
 
 
-
-    <label for="comentarios">Comentarios:</label>
+    <label for="comentarios"> Comentarios:</label>
     <textarea id="comentarios" name="comentarios"></textarea>
   
     <label for="acepto-politica-privacidad">
@@ -285,8 +330,12 @@
       <p class="politica-privacidad">
         Al enviar este formulario, aceptas nuestra <a href="#">política de privacidad y seguridad de los datos del cliente</a>.
       </p>
+
+      
   </form>
 
+
+</section>
 
 
 
