@@ -127,12 +127,11 @@
             <div class="box-w">
                 <img src="https://cdn.icon-icons.com/icons2/1537/PNG/512/1562685-code-computer-creative-html-process-technology-web-development_107046.png" alt="">
                 <h3>Carol</h3>
-                <p>Menu adaptado al móvil <br>Galerias de fotos y videos. <br>
-                    Reproductor de video en la misma página.<br>
-                    Formulario de contacto.<br>Redes sociales.<br>Web adaptada al 
-                    móvil.<br> <br>
+                <p>Menu adaptado al móvil <br>Galerias de fotos con acceso
+                  a página de info. <br> Reproductor video en la misma página <br>
+                  Formulario de contacto.<br>Redes sociales.<br>Web adaptada al 
+                  móvil.</p> 
                     
-                </p>
                    <div class="form-inline justify-content-center">
                     <a href="/Webs_actores/carole_Lombard/index.html" target="_blank"> <input type="button" value="VER DEMO" class="btn btn-danger px-4 py-2"> </a>               
                  </div>
@@ -196,16 +195,19 @@
         </div>
       </div>
        
+      
     </section>
 
 
     <!-- SERVICIOS VIDEOBOS INFO -->
+    <div class="web-text-form">
 
-
-
- 
-
-  
+      <p>Comienza a destacar en tu carrera artística con una página web 
+        de calidad. <br> Completa nuestro formulario para más información</p>
+       
+      
+        </div>
+   
 
 </section>
 
@@ -214,18 +216,55 @@
 
 <section class="img_call">
   <div class="img-vertical">
-    <img src="/img/cine copy.png" alt="">
-    <img src="/img/cine copy.png" alt="">
-    <img src="/img/cine copy.png" alt="">
+    <div class="photo-container">
+   <img src="/img/cine copy.png" alt="">
+   <div class="photo-overlay">
+    <h2>POSTPRODUCCIÓN</h2>
+    <p>¡Descubre cómo llevar tus proyectos al siguiente nivel
+       con la postproducción de imagen y sonido!
+       Haz clic aquí para saber más</p>
+    <a href="/pospo.html" class="button">Ver más</a>
+  </div>
+</div>
 
+<div class="photo-container">
+  <img src="/img/cine copy.png" alt="">
+  <div class="photo-overlay">
+   <h2>VIDEOBOOKS</h2>
+   <p>Confia en mi experiencia en montaje y sonido para que tu videobook
+    brille como nunca.Déjame ayudarte a destacar.
+    Haz clic aquí para saber más
+   </p>
+   <a href="#mas-informacion" class="button">Ver más</a>
+ </div>
+</div>
+
+
+<div class="photo-container">
+  <img src="/img/cine copy.png" alt="">
+  <div class="photo-overlay">
+   <h2>ESCRITORA</h2>
+   <p>Bienvenidos a mi rincón literario. En mi página de escritora encontrarás
+     mis libros y podrás adentrarte en mi mundo creativo a través de mi blog.
+      ¡Acompáñame en esta aventura!</p>
+   <a href="#mas-informacion" class="button">Ver más</a>
+ </div>
+</div>
 
 
 
   </div>
 
 
+  <!-- encabezado formulario -->
+
+
+
 
 <form id="formulario-contacto" action="https://formspree.io/f/mpzbokrb" method="post">
+
+  
+
 	  
     <h2 class="upercase">¿Qué información necesitamos para crear tu web</h2>
     <label for="nombre">Nombre:</label>
@@ -242,23 +281,23 @@
     <label for="pregunta1">¿Dispones de los siguientes materiales? (marca todas las que correspondan):</label>
     <div class="checkbox-grid">
       <div>
-        <input type="checkbox" id="videobook" name="pregunta1[]" value="Videobook">
+        <input type="checkbox" id="videobook" name="pregunta1[]" value=" Tienes Videobook">
         <label for="videobook">Videobook</label>
       </div>
       <div>
-        <input type="checkbox" id="fotografias" name="pregunta1[]" value="Fotografías">
+        <input type="checkbox" id="fotografias" name="pregunta1[]" value=" Tienes Fotografías">
         <label for="fotografias">Fotografías</label>
       </div>
       <div>
-        <input type="checkbox" id="videos-previos" name="pregunta1[]" value="Videos de trabajos previos">
+        <input type="checkbox" id="videos-previos" name="pregunta1[]" value=" Tienes Videos de trabajos">
         <label for="videos-previos">Videos de trabajos previos</label>
       </div>
       <div>
-        <input type="checkbox" id="enlaces-previos" name="pregunta1[]" value="Enlaces a trabajos previos">
+        <input type="checkbox" id="enlaces-previos" name="pregunta1[]" value="Tienes Enlaces a trabajos">
         <label for="enlaces-previos">Enlaces a trabajos previos</label>
       </div>
       <div>
-        <input type="checkbox" id="texto" name="pregunta1[]" value="Texto">
+        <input type="checkbox" id="texto" name="pregunta1[]" value="Tienes Texto">
         <label for="texto">Texto</label>
       </div>
     </div>
@@ -290,20 +329,20 @@
     <label for="otraEspecifica">Otra (específica):</label>
     <input type="text" id="otraEspecifica" name="otraEspecifica">
 
-    <label for="tipo-plantilla">¿Qué tipo de plantilla te gustaría utilizar para tu sitio web? (elige una opción): :</label>
+    <label for="tipo-plantilla">¿Qué tipo de plantilla te gustaría utilizar para tu sitio web? (elige una opción): </label>
     <select id="tipo-plantilla" name="tipo-plantilla" required>
         <option value="">Seleccione una opción</option>
-        <option value="piso">Web Carol</option>
-        <option value="casa">Web Cary</option>
-        <option value="loft">Web John</option>
-        <option value="loft">Web Emma</option>
+        <option value="Carol">Web Carol</option>
+        <option value="Cary">Web Cary</option>
+        <option value="John">Web John</option>
+        <option value="Emma">Web Emma</option>
 
       </select>
   
     <label for="tipo-videobook">¿Estás interesado en que me encargue de crear tu videobook y lo incluya en tu sitio web? </label>
     <select id="tipo-viceobook" name="tipo-videobook" required>
       <option value="">Selecciona una opción</option>
-      <option value="si">Si</option>
+      <option value="si quiero videobook">Si</option>
       <option value="no">No</option>
       
     </select>
