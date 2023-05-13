@@ -2136,11 +2136,19 @@ iframe {
     box-sizing: border-box;
 }
 form{
-    width: 50%;
+    width: 60%;
     height: 600px;
     margin: 0 auto;
 }
 
+.section-3 i {
+    color: #100e0e;
+    padding: 0px;
+}
+.section-3 {
+    background-color: #f2f2f2;
+    padding: 8px 0;
+}
 
 
 /*  RESPONSIVO PAGINAS */
@@ -2288,7 +2296,7 @@ main .site-title-web{
     justify-content: center;
     margin-top: 0;
     margin-bottom: 50px;
-    transform: scale(0.8);
+    transform: scale(0.6);
 
 }
 
@@ -2330,6 +2338,8 @@ main .site-title-web h1, h3{
 }
 
 @media screen and (max-width: 750px) {
+   
+
     .site-title-w {
     font-size: 50px;
        
