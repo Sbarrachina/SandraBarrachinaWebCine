@@ -2094,7 +2094,7 @@ iframe {
         background-repeat: no-repeat;   
     }
     .conten p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 2rem;
       }
     
@@ -2141,14 +2141,52 @@ form{
     margin: 0 auto;
 }
 
-.section-3 i {
-    color: #100e0e;
-    padding: 0px;
+#boton {
+    border-radius: 10%;
+    margin-bottom: 200px;
+    margin: 0 auto;
 }
-.section-3 {
-    background-color: #f2f2f2;
-    padding: 8px 0;
+
+.site-content-contacto {
+    background-image: url(/MisImg/foto2.png);
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
+
+.site-title-contacto{
+    margin-top: 10%;
+    margin-bottom: 6%;
+    font-size: 80px;
+    color:rgb(222, 19, 19) ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin-left: 800px;
+
+
+}
+
+  @media screen  and (max-width: 750px){
+    form{
+        width: 95%;
+        height: 600px;
+        margin: 0 auto;
+    }
+
+    .site-title-contacto{
+        margin-top: 20%;
+        margin-left: 10px;
+        font-size: 40px;
+     
+    
+    
+    }
+    
+  }
+
 
 
 /*  RESPONSIVO PAGINAS */
@@ -2296,7 +2334,7 @@ main .site-title-web{
     justify-content: center;
     margin-top: 0;
     margin-bottom: 50px;
-    transform: scale(0.6);
+    transform: scale(0.5);
 
 }
 
