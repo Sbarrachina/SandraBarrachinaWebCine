@@ -1403,12 +1403,32 @@ main .site-title3 .btn:hover{
     margin-bottom: 20px;
 }
 
-.videos-post{
-    margin-left: 40px;
-}
+.videos-post {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 para el tamaño del video */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .videos-post iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Media query para dispositivos con un ancho máximo de 600px */
+  @media (max-width: 600px) {
+    .videos-post {
+      padding-bottom: 75%; /* Proporción 4:3 para el tamaño del video en dispositivos móviles */
+    }
+  }
+  
 hr{
 padding: 5px
 }
+
 
 
 
@@ -1434,7 +1454,7 @@ padding: 5px
         margin-left: 0px;
     }
     iframe{
-        width: 100vw
+        width: 100vw;
     } 
 }
 
