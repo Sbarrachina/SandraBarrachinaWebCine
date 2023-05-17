@@ -1551,6 +1551,7 @@ main .site-title4 .btn:hover{
     margin: 0 auto;
     
     }
+
     .services .box-container{
       display: flex;
       flex-wrap: wrap;
@@ -1565,7 +1566,13 @@ main .site-title4 .btn:hover{
       border:.1rem solid rgba(0,0,0,.2);
       text-align: center;
       padding:2rem;
+      transition: transform 0.3s ease;
+
     }
+
+    .services .box-container .box:hover {
+        transform: scale(1.1); /* Escala la caja al 110% */
+      }
     
     .services .box-container .box h3{
       font-size: 2.5rem;
@@ -2581,8 +2588,15 @@ main .site-title-w .btn:hover{
     border: .1rem solid rgba(0, 0, 0, .2);
     text-align: center;
     padding: 2rem;
+    transition: transform 0.3s ease;
+
   }
   
+  .box-container-w .box-w:hover{
+    transform: scale(1.1); /* Escala la caja al 110% */
+
+  }
+
   .box-container-w .box-w h3 {
     font-size: 2.5rem;
     color: #333;
@@ -2808,11 +2822,14 @@ main .site-title-w .btn:hover{
     border-radius: 4px;
     font-size: 1.2rem;
     transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
-  }
+}
   
   .button:hover {
-    background: #333;
-    color: #fff;
+  
+    background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255), rgb(251, 255, 20), rgb(255, 15, 15));
+    background-size: 300%;
+    text-decoration: none;
+
   }
 
 
