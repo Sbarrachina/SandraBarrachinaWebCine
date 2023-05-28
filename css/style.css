@@ -232,10 +232,13 @@ i {
 
     
     /* SECCIÓN UNO :  PRESENTACIÓN */
-    
+
+
+
     .section-1 .heading-1 {
         margin-top: 7%;
         color:rgb(216, 15, 15) ;
+        margin-bottom: 7%;
     
     }
     .text-1{
@@ -244,13 +247,11 @@ i {
     }
     .section-1 .para-1 {
         width: 100%;
-        margin-left: 0;
-        margin-bottom: 5%;
     }
     .section-1 .card-text,
     .para-1 {
         color: rgb(16, 14, 14);
-        font-size: 18px;
+        font-size: 20px;
         font-family: 'Poppins', sans-serif;
         line-height: 1.5;
     }
@@ -368,19 +369,9 @@ i {
     }
 
 
-    /* FORMACIÓN  */
+   
+    /* formación */
     
-    .text-sandra{
-        font-size: 2.5rem;
-        text-transform: uppercase;
-    }
-    
-    .course{
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        padding-top: 100px;
-    }
     h1{
         font-size: 36px;
         font-weight: 600;
@@ -399,24 +390,13 @@ i {
         display: flex;
         justify-content: space-between;
     }
-    .course-col{
-        flex-basis: 31%;
-        background: #fff3f3;
-        border-radius: 10px;
-        margin-bottom: 5%;
-        padding: 20px 12px;
-        box-sizing: border-box;
-        transition: 0.5s;
-    }
+    
     h3{
         text-align: center;
         font-weight: 600;
         margin: 10px 0;
     }
-    .course-col:hover{
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0,0.2);
     
-    }
     
  
 
@@ -432,6 +412,8 @@ i {
         border-radius: 10px;
         z-index: -1;
         transition: all 0.4s ease;
+        margin-bottom: 90px;
+
 
     }
 
@@ -579,6 +561,10 @@ i {
 
 /*  POSTPRODUCCIÓN PAGE */
 /* BIENVENIDA POST POSTPO */
+
+.pospotext{
+    margin-bottom: 90px;
+}
 
 #boton-2{
     margin-left: 360px;
