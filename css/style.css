@@ -3,6 +3,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #f4efe6 !important; /* Cambia este color al tono beige que desees */
+
     
 
 }
@@ -48,7 +50,7 @@ i {
     }
 
     header{
-        background: radial-gradient(#fff,#e6e037);
+        background: radial-gradient(#fff,#515150);
         height: 150px;
     
     }
@@ -528,7 +530,7 @@ i {
     
     }
     footer h5{
-        background: radial-gradient(#fff,#e6e037);
+        background: radial-gradient(#fff,#515150);
         height: 100px;
         padding: 40px;
     }
