@@ -285,7 +285,7 @@ i {
         grid-template-areas: 
         ". playlist__one .";
         margin-bottom: 60px;
-        background-color: #fff;
+        background-color: #f4efe6 !important; /* Cambia este color al tono beige que desees */
         padding-top: 60px;
     
     
